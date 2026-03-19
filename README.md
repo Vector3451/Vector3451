@@ -20,7 +20,6 @@
 ```
 
 *Infiltrate the system. Find the 3 hidden flags to prove your rank.*<br/>
-*Flags Found: [ 0 / 3 ]*
 
 </div>
 
