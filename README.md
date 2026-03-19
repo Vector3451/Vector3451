@@ -1,48 +1,60 @@
-                                                                                          ██╗   ██╗███████╗ ██████╗████████╗ ██████╗ ██████╗ 
-                                                                                          ██║   ██║██╔════╝██╔════╝╚══██╔══╝██╔═══██╗██╔══██╗
-                                                                                          ██║   ██║█████╗  ██║        ██║   ██║   ██║██████╔╝
-                                                                                          ╚██╗ ██╔╝██╔══╝  ██║        ██║   ██║   ██║██╔══██╗
-                                                                                           ╚████╔╝ ███████╗╚██████╗   ██║   ╚██████╔╝██║  ██║
-                                                                                            ╚═══╝  ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝
+<!-- HEADER -->
+<div align="center">
 
-<p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=20&pause=1000&color=00B4D8&center=true&vCenter=true&width=500&lines=BOOTING_NEURAL_UPLINK...;CONNECTION_SECURE_...;CTF_V3.0_INITIALIZED...;" />
-</p>
+```text
+ _    __          __               _____ __ __  ______   ___  
+| |  / /__  _____/ /_____  _____  |__  // // / / ____/  <  /  
+| | / / _ \/ ___/ __/ __ \/ ___/   /_ </ // /_/___ \    / /   
+| |/ /  __/ /__/ /_/ /_/ / /     ___/ /__  __/___/ /   / /    
+|___/\___/\___/\__/\____/_/     /____/  /_/ /_____/   /_/     
+   [::] SYSTEM_CORE_COMPROMISED   ::   ACCESS_GRANTED [::]
+```
+
+[![Visitors](https://komarev.com/ghpvc/?username=Vector3451&style=flat-square&color=00B4D8&labelColor=0d1117&label=VISITORS)](https://github.com/Vector3451)
+&nbsp;
+[![Followers](https://img.shields.io/github/followers/Vector3451?style=flat-square&color=00B4D8&labelColor=0d1117&label=FOLLOWERS&logo=github)](https://github.com/Vector3451)
+&nbsp;
+[![Stars](https://img.shields.io/github/stars/Vector3451?style=flat-square&color=00B4D8&labelColor=0d1117&label=STARS&logo=github)](https://github.com/Vector3451)
+</div>
 
 ---
 
-### 🕹️ Terminal Breach [CTF_MODE: ENABLED]
-*Infiltrate the system. Find the 3 hidden flags to prove your rank.*
+<!-- ABOUT -->
+```python
+# Vector3451.py — instance config
+
+class Architect:
+    alias      = "Vector3451"
+    role       = "Systems Architect & Developer"
+    languages  = ["Python", "JavaScript", "Rust", "TypeScript"]
+    focus      = ["Artificial Intelligence", "Cybersecurity", "Distributed Systems"]
+    mindset    = "Data-driven · Stealthy · Relentless"
+    philosophy = "Analyze the node. Exploit the vulnerability. Own the network."
+    status     = "[ONLINE] — bypassing neural firewalls"
+```
+
+---
+
+<!-- TERMINAL BREACH CTF -->
+<div align="center">
+
+```
+>_ CTF_ENGINE  ···  breach.log
+```
+
+*Infiltrate the system. Find the 3 hidden flags to prove your rank.*<br/>
 *Flags Found: [ 0 / 3 ]*
 
-- **[[ LEVEL_1: PORT_SCAN ]](#-nodebin)**
-- **[[ LEVEL_2: FIREWALL_BYPASS ]](#-access-denied)**
-- **[[ LEVEL_3: KERNEL_DECRYPTION ]](#-kernel-panic)**
-- **[[ HINT_SYSTEM ]](#-hacker-intelligence)**
+<br/>
 
----
+<a href="#-nodebin"><code>[ LEVEL_1: PORT_SCAN ]</code></a> &nbsp;&nbsp;
+<a href="#-access-denied"><code>[ LEVEL_2: FIREWALL_BYPASS ]</code></a> &nbsp;&nbsp;
+<a href="#-kernel-panic"><code>[ LEVEL_3: KERNEL_DECRYPTION ]</code></a> &nbsp;&nbsp;
+<a href="#-hacker-intelligence"><code>[ HINT_SYSTEM ]</code></a>
 
-### 📊 The Data Matrix
+<br/>
 
-#### 💻 Algorithmic Core (LeetCode)
-[![LeetCode Stats](https://leetcard.jacoblin.cool/Vinay_Vijay_2?theme=dark&font=Fira%20Code&ext=activity)](https://leetcode.com/u/Vinay_Vijay_2/)
-
-#### 🏆 Hacker Rank [VERIFIED]
-![Trophies](https://github-profile-trophy.vercel.app/?username=Vector3451&theme=tokyonight&no-bg=true&column=7&margin-w=15&no-frame=true)
-
-#### 📉 Overall Systems Pulse
-[![GitHub Readme Stats](https://github-readme-stats.vercel.app/api?username=Vector3451&show_icons=true&title_color=00b4d8&text_color=ffffff&icon_color=00b4d8&bg_color=0D1117&border_color=00b4d8)](https://github.com/Vector3451)
-
----
-
-### 🟢 Active Contribution Node (Kinetic Tracker)
-[![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=Vector3451&bg_color=0D1117&color=00b4d8&line=00b4d8&point=ffffff&area=true&hide_border=true&custom_title=System_Activity_Pulse)](https://github.com/Vector3451)
-
-*(Note: Advanced Pinball-physics SVGs require backend automation. This kinetic wave graph reflects your real-time github strike rate automatically.)*
-
----
-
-### 🛰️ Terminal Output (CTF Engine)
+</div>
 
 #### 📂 node:bin
 > **Target**: Scan the system binaries to find Flag #1.
@@ -71,3 +83,95 @@
 > - **Level 3**: Hover over the red System Error Status badge.
 
 ---
+
+<!-- CONTRIBUTION GRAPH -->
+<div align="center">
+
+```
+>_ CONTRIBUTION TRACKER  ···  kinetic_pulse.log
+```
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=Vector3451&theme=github-dark&bg_color=0d1117&color=00B4D8&line=00B4D8&point=ffffff&area=true&area_color=003b5c&hide_border=true&radius=4&custom_title=System_Activity_Pulse" width="100%"/>
+</div>
+
+---
+
+<!-- GITHUB METRICS -->
+<div align="center">
+
+```
+>_ DIAGNOSTIC REPORT  ···  github.com/Vector3451
+```
+
+<img src="https://github-readme-stats.vercel.app/api?username=Vector3451&show_icons=true&theme=github_dark&hide_border=true&bg_color=0D1117&title_color=00B4D8&icon_color=00B4D8&text_color=C9D1D9&border_radius=4" height="160"/>
+&nbsp;
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Vector3451&layout=compact&theme=github_dark&hide_border=true&bg_color=0D1117&title_color=00B4D8&text_color=C9D1D9&border_radius=4" height="160"/>
+
+<img src="https://streak-stats.demolab.com?user=Vector3451&theme=github-dark-blue&hide_border=true&background=0D1117&ring=00B4D8&fire=00B4D8&currStreakLabel=00B4D8&sideLabels=9FB3C8&dates=C9D1D9&border_radius=4" width="60%"/>
+
+<img src="https://github-profile-trophy.vercel.app/?username=Vector3451&theme=onedark&no-frame=true&no-bg=true&margin-w=4&column=7" width="100%"/>
+</div>
+
+---
+
+<!-- LEETCODE -->
+<div align="center">
+
+```
+>_ LEETCODE TERMINAL  ···  Vinay_Vijay_2.bin
+```
+
+<img src="https://leetcard.jacoblin.cool/Vinay_Vijay_2?theme=dark&font=Fira%20Code&ext=heatmap&border=0&radius=4&width=500&colors=0d1117,161b22,00B4D8,00B4D8,c9d1d9,00B4D8,ff7b72,ffa657,00B4D8" alt="LeetCode Stats"/>
+</div>
+
+---
+
+<!-- DSA + OBJECTIVES -->
+<div align="center">
+
+```
+>_ SYSTEM STATUS  ···  2026.log
+```
+
+```text
+╔══════════════════════════════════════════════════════════════════╗
+║  FOCUS MATRIX                                                    ║
+╠═══════════════════╦══════════════════╦═══════════════════════════╣
+║  AI Engineering   ║  [##########]    ║  CRITICAL                 ║
+║  Cybersecurity    ║  [#########·]    ║  CRITICAL                 ║
+║  Backend Arch.    ║  [######····]    ║  HIGH                     ║
+║  CTF Challenges   ║  [####······]    ║  MEDIUM                   ║
+║  Algorithms (LC)  ║  [##########]    ║  ALWAYS                   ║
+╚═══════════════════╩══════════════════╩═══════════════════════════╝
+```
+
+```yaml
+# OBJECTIVES.yml — FY 2026
+
+Artificial Intelligence:
+  target:   "Build autonomous reasoning agents"
+  domains:  [LLMs, RAG matrices, deep neural networks]
+
+Cybersecurity:
+  goal:     "Master penetration testing and exploit crafting"
+  rule:     "Hack the planet."
+
+Mindset:
+  mode:     "Systems architect — view the whole network"
+  practice: "Continuously refactor reality"
+  exit_code: 0  # no unresolved exceptions allowed
+```
+
+---
+
+<!-- FOOTER -->
+<div align="center">
+
+<img src="https://readme-typing-svg.demolab.com?font=Share+Tech+Mono&size=13&duration=3000&pause=1200&color=00B4D8&center=true&vCenter=true&width=480&lines=%24+shutdown+--graceful+--save+progress;Saving+state...+[OK];Committing+to+main...+[OK];Session+logged.+See+you+tomorrow."/>
+
+```
+[ github.com/Vector3451 ]  ·  [ SYSTEM_ARCHITECT ]  ·  [ 2026 ]
+```
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:00b4d8,100:0d1117&height=80&section=footer"/>
+</div>
