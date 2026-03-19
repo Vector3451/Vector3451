@@ -94,7 +94,6 @@
 
 <img src="https://streak-stats.demolab.com?user=Vector3451&theme=github-dark-blue&hide_border=true&background=0D1117&ring=00B4D8&fire=00B4D8&currStreakLabel=00B4D8&sideLabels=9FB3C8&dates=C9D1D9&border_radius=4" width="60%"/>
 
-<img src="https://github-profile-trophy.vercel.app/?username=Vector3451&theme=onedark&no-frame=true&no-bg=true&margin-w=4&column=7" width="100%"/>
 </div>
 
 ---
