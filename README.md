@@ -2,7 +2,7 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:00b4d8,100:0d1117&height=80&section=header"/>
 <div align="center">
 
-<img src="animated_logo.svg" width="100%" alt="Vector3451 Animated Glitch Logo"/>
+<img src="animated_logo.svg?v=3" width="100%" alt="Vector3451 Animated Glitch Logo"/>
 
 [![Visitors](https://komarev.com/ghpvc/?username=Vector3451&style=flat-square&color=00B4D8&labelColor=0d1117&label=VISITORS)](https://github.com/Vector3451)
 &nbsp;
