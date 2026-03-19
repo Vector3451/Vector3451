@@ -1,4 +1,5 @@
 <!-- HEADER -->
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:00b4d8,100:0d1117&height=80&section=footer"/>
 <div align="center">
 
 ```text
