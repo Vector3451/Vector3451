@@ -41,49 +41,48 @@
 
 <br/>
 
-<div align="left" style="background-color: #050505; padding: 25px; border-radius: 8px; border: 1px solid #30363d; font-family: 'Courier New', Courier, monospace; line-height: 1.6;">
+<div align="left">
 
-<span style="color: #00B4D8;">[remote@Vector3451]~$</span> <code style="background: none; color: #FFF; font-size: 14px;">./initialize_breach.sh</code>  
-<span style="color: #aaaaaa;">[+] BOOTING OVERRIDE PROTOCOLS...</span>  
-<span style="color: #aaaaaa;">[+] SECURE CONNECTION ESTABLISHED.</span>  
+<details open>
+<summary><code>🖥️ [remote@Vector3451] ~$ ./initialize_breach.sh</code></summary>
 
-<br/>
-
-<span style="color: #00B4D8;">[remote@Vector3451]~$</span> <code style="background: none; color: #FFF; font-size: 14px;">scan_network --target localhost</code>
-<details><summary style="cursor: pointer; color: #39FF14;"><i>[Press Enter to Execute]</i></summary>
-
-<span style="color: #aaaaaa;">[+] PORT 8080: OPEN</span><br/>
-<span style="color: #aaaaaa;">[+] PORT 22:   FILTERED</span><br/>
-<span style="color: #ffaa00;">[!] ALERT: LEGACY BACKDOOR DETECTED.</span><br/>
-<span style="color: #00FF00;">✅ Flag #1: flag{1_system_access_granted}</span>
-
+```yaml
+STATUS: "BOOTING_OVERRIDE_PROTOCOLS"
+CONNECTION: "SECURE_CONNECTION_ESTABLISHED"
+```
 </details>
 
-<br/>
+<details>
+<summary><code>💻 [remote@Vector3451] ~$ scan_network --target localhost</code></summary>
 
-<span style="color: #00B4D8;">[remote@Vector3451]~$</span> <code style="background: none; color: #FFF; font-size: 14px;">bypass_firewall --method neural</code>
-<details><summary style="cursor: pointer; color: #39FF14;"><i>[Press Enter to Execute]</i></summary>
+```diff
++ PORT 8080: OPEN
++ PORT 22:   FILTERED
+! ALERT: LEGACY BACKDOOR DETECTED.
++ Flag #1: flag{1_system_access_granted}
+```
+</details>
 
-<span style="color: #ff0000;">[ERROR] PAYLOAD BLOCKED BY ICE FIREWALL.</span><br/>
-<span style="color: #ffaa00;">[HINT] Inspect the raw markdown packet source for encrypted comments.</span><br/>
+<details>
+<summary><code>💻 [remote@Vector3451] ~$ bypass_firewall --method neural</code></summary>
+
+```diff
+- ERROR: PAYLOAD BLOCKED BY ICE FIREWALL.
+! HINT: Inspect the raw markdown packet source for encrypted comments.
+# STATUS: PACKET_INTERCEPT_REQUIRED
+```
 <!-- Flag #2 (Base64 of "flag{2_bypassed_the_firewall}"): ZmxhZ3syX2J5cGFzc2VkX3RoZV9maXJld2FsbH0= -->
-<span style="color: #aaaaaa;">[STATUS] PACKET_INTERCEPT_REQUIRED</span>
-
 </details>
 
-<br/>
+<details>
+<summary><code>💻 [remote@Vector3451] ~$ decrypt_kernel --force</code></summary>
 
-<span style="color: #00B4D8;">[remote@Vector3451]~$</span> <code style="background: none; color: #FFF; font-size: 14px;">decrypt_kernel --force</code>
-<details><summary style="cursor: pointer; color: #39FF14;"><i>[Press Enter to Execute]</i></summary>
-
-<span style="color: #ff0000;">[CRITICAL] MEMORY BOUNDS EXCEEDED.</span><br/>
-<span style="color: #ffaa00;">[HINT] Review the alt-text tooltip of the panic status below to extract the final key.</span><br/><br/>
+```diff
+- CRITICAL: MEMORY BOUNDS EXCEEDED.
+! HINT: Review the alt-text tooltip of the panic status below to extract the final key.
+```
 <img src="https://img.shields.io/badge/Status-Kernel_Panic-red?style=for-the-badge" title="flag{3_kernel_override_complete}" alt="flag{3_kernel_override_complete}" />
-
 </details>
-
-<br/>
-<span style="color: #00B4D8;">[remote@Vector3451]~$</span> <span style="color: #FFF; animation: blink 1s step-end infinite;">█</span>
 
 </div>
 
@@ -97,13 +96,12 @@
 ```
 
 <picture>
-  <!-- Auto-generated Space Shooter GIF via GitHub Actions -->
-  <source media="(prefers-color-scheme: dark)" srcset="space-shooter.gif"/>
-  <source media="(prefers-color-scheme: light)" srcset="space-shooter.gif"/>
-  <img src="space-shooter.gif" width="100%" alt="Space Invaders Contribution Graph"/>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/czl9707/github-space-shooter/main/demo/demo.gif"/>
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/czl9707/github-space-shooter/main/demo/demo.gif"/>
+  <img src="https://raw.githubusercontent.com/czl9707/github-space-shooter/main/demo/demo.gif" width="100%" alt="Space Invaders Contribution Graph"/>
 </picture>
 
-*(Note: Target coordinates and Boss encounter sequences are determined automatically by your GitHub commit volume!)*
+*(Note: Target coordinates and Boss encounter sequences are determined automatically by your GitHub commit volume! The GIF will switch to your own live graph once the GitHub Action successfully completes its first midnight run.)*
 </div>
 
 ---
