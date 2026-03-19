@@ -1,534 +1,556 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="800" height="200" viewBox="0 0 800 200">
   <style>
-    .txt { font-family: "Courier New", Courier, monospace; font-size: 16px; fill: #00B4D8; white-space: pre; font-weight: bold; }
-    .frame { opacity: 0; animation: pulse 5.7s infinite step-end; }
-    .glitch { animation: glitch_anim 3s infinite step-none; }
-    @keyframes glitch_anim {
-      0% { transform: translate(0,0); }
-      92% { transform: translate(0,0); fill: #00B4D8; opacity: 1; }
-      93% { transform: translate(-3px, 1px) skewX(5deg); fill: #ff003c; opacity: 0.8; }
-      94% { transform: translate(3px, -2px) skewX(-5deg); fill: #00e5ff; opacity: 0.8; }
-      95% { transform: translate(0,0); fill: #00B4D8; opacity: 1; }
-      100% { transform: translate(0,0); }
-    }
-    .f0 { animation-delay: 0.00s; }
-    .f1 { animation-delay: 0.10s; }
-    .f2 { animation-delay: 0.20s; }
-    .f3 { animation-delay: 0.30s; }
-    .f4 { animation-delay: 0.40s; }
-    .f5 { animation-delay: 0.50s; }
-    .f6 { animation-delay: 0.60s; }
-    .f7 { animation-delay: 0.70s; }
-    .f8 { animation-delay: 0.80s; }
-    .f9 { animation-delay: 0.90s; }
-    .f10 { animation-delay: 1.00s; }
-    .f11 { animation-delay: 1.10s; }
-    .f12 { animation-delay: 1.20s; }
-    .f13 { animation-delay: 1.30s; }
-    .f14 { animation-delay: 1.40s; }
-    .f15 { animation-delay: 1.50s; }
-    .f16 { animation-delay: 1.60s; }
-    .f17 { animation-delay: 1.70s; }
-    .f18 { animation-delay: 1.80s; }
-    .f19 { animation-delay: 1.90s; }
-    .f20 { animation-delay: 2.00s; }
-    .f21 { animation-delay: 2.10s; }
-    .f22 { animation-delay: 2.20s; }
-    .f23 { animation-delay: 2.30s; }
-    .f24 { animation-delay: 2.40s; }
-    .f25 { animation-delay: 2.50s; }
-    .f26 { animation-delay: 2.60s; }
-    .f27 { animation-delay: 2.70s; }
-    .f28 { animation-delay: 2.80s; }
-    .f29 { animation-delay: 2.90s; }
-    .f30 { animation-delay: 3.00s; }
-    .f31 { animation-delay: 3.10s; }
-    .f32 { animation-delay: 3.20s; }
-    .f33 { animation-delay: 3.30s; }
-    .f34 { animation-delay: 3.40s; }
-    .f35 { animation-delay: 3.50s; }
-    .f36 { animation-delay: 3.60s; }
-    .f37 { animation-delay: 3.70s; }
-    .f38 { animation-delay: 3.80s; }
-    .f39 { animation-delay: 3.90s; }
-    .f40 { animation-delay: 4.00s; }
-    .f41 { animation-delay: 4.10s; }
-    .f42 { animation-delay: 4.20s; }
-    .f43 { animation-delay: 4.30s; }
-    .f44 { animation-delay: 4.40s; }
-    .f45 { animation-delay: 4.50s; }
-    .f46 { animation-delay: 4.60s; }
-    .f47 { animation-delay: 4.70s; }
-    .f48 { animation-delay: 4.80s; }
-    .f49 { animation-delay: 4.90s; }
-    .f50 { animation-delay: 5.00s; }
-    .f51 { animation-delay: 5.10s; }
-    .f52 { animation-delay: 5.20s; }
-    .f53 { animation-delay: 5.30s; }
-    .f54 { animation-delay: 5.40s; }
-    .f55 { animation-delay: 5.50s; }
-    .f56 { animation-delay: 5.60s; }
-    @keyframes pulse {
-      0% { opacity: 1; }
-      1.754% { opacity: 0; }
-      100% { opacity: 0; }
-    }
+    .frame{opacity:0}
+    .f0{animation:pulse 4.88s 0.00s infinite step-end;}
+    .f1{animation:pulse 4.88s 0.08s infinite step-end;}
+    .f2{animation:pulse 4.88s 0.16s infinite step-end;}
+    .f3{animation:pulse 4.88s 0.24s infinite step-end;}
+    .f4{animation:pulse 4.88s 0.32s infinite step-end;}
+    .f5{animation:pulse 4.88s 0.40s infinite step-end;}
+    .f6{animation:pulse 4.88s 0.48s infinite step-end;}
+    .f7{animation:pulse 4.88s 0.56s infinite step-end;}
+    .f8{animation:pulse 4.88s 0.64s infinite step-end;}
+    .f9{animation:pulse 4.88s 0.72s infinite step-end;}
+    .f10{animation:pulse 4.88s 0.80s infinite step-end;}
+    .f11{animation:pulse 4.88s 0.88s infinite step-end;}
+    .f12{animation:pulse 4.88s 0.96s infinite step-end;}
+    .f13{animation:pulse 4.88s 1.04s infinite step-end;}
+    .f14{animation:pulse 4.88s 1.12s infinite step-end;}
+    .f15{animation:pulse 4.88s 1.20s infinite step-end;}
+    .f16{animation:pulse 4.88s 1.28s infinite step-end;}
+    .f17{animation:pulse 4.88s 1.36s infinite step-end;}
+    .f18{animation:pulse 4.88s 1.44s infinite step-end;}
+    .f19{animation:pulse 4.88s 1.52s infinite step-end;}
+    .f20{animation:pulse 4.88s 1.60s infinite step-end;}
+    .f21{animation:pulse 4.88s 1.68s infinite step-end;}
+    .f22{animation:pulse 4.88s 1.76s infinite step-end;}
+    .f23{animation:pulse 4.88s 1.84s infinite step-end;}
+    .f24{animation:pulse 4.88s 1.92s infinite step-end;}
+    .f25{animation:pulse 4.88s 2.00s infinite step-end;}
+    .f26{animation:pulse 4.88s 2.08s infinite step-end;}
+    .f27{animation:pulse 4.88s 2.16s infinite step-end;}
+    .f28{animation:pulse 4.88s 2.24s infinite step-end;}
+    .f29{animation:pulse 4.88s 2.32s infinite step-end;}
+    .f30{animation:pulse 4.88s 2.40s infinite step-end;}
+    .f31{animation:pulse 4.88s 2.48s infinite step-end;}
+    .f32{animation:pulse 4.88s 2.56s infinite step-end;}
+    .f33{animation:pulse 4.88s 2.64s infinite step-end;}
+    .f34{animation:pulse 4.88s 2.72s infinite step-end;}
+    .f35{animation:pulse 4.88s 2.80s infinite step-end;}
+    .f36{animation:pulse 4.88s 2.88s infinite step-end;}
+    .f37{animation:pulse 4.88s 2.96s infinite step-end;}
+    .f38{animation:pulse 4.88s 3.04s infinite step-end;}
+    .f39{animation:pulse 4.88s 3.12s infinite step-end;}
+    .f40{animation:pulse 4.88s 3.20s infinite step-end;}
+    .f41{animation:pulse 4.88s 3.28s infinite step-end;}
+    .f42{animation:pulse 4.88s 3.36s infinite step-end;}
+    .f43{animation:pulse 4.88s 3.44s infinite step-end;}
+    .f44{animation:pulse 4.88s 3.52s infinite step-end;}
+    .f45{animation:pulse 4.88s 3.60s infinite step-end;}
+    .f46{animation:pulse 4.88s 3.68s infinite step-end;}
+    .f47{animation:pulse 4.88s 3.76s infinite step-end;}
+    .f48{animation:pulse 4.88s 3.84s infinite step-end;}
+    .f49{animation:pulse 4.88s 3.92s infinite step-end;}
+    .f50{animation:pulse 4.88s 4.00s infinite step-end;}
+    .f51{animation:pulse 4.88s 4.08s infinite step-end;}
+    .f52{animation:pulse 4.88s 4.16s infinite step-end;}
+    .f53{animation:pulse 4.88s 4.24s infinite step-end;}
+    .f54{animation:pulse 4.88s 4.32s infinite step-end;}
+    .f55{animation:pulse 4.88s 4.40s infinite step-end;}
+    .f56{animation:pulse 4.88s 4.48s infinite step-end;}
+    .f57{animation:pulse 4.88s 4.56s infinite step-end;}
+    .f58{animation:pulse 4.88s 4.64s infinite step-end;}
+    .f59{animation:pulse 4.88s 4.72s infinite step-end;}
+    .f60{animation:pulse 4.88s 4.80s infinite step-end;}
+    @keyframes pulse{0%{opacity:1}1.639%{opacity:0}100%{opacity:0}}
   </style>
-  <rect width="100%" height="100%" fill="#0d1117" rx="8" />
+  <rect width="100%" height="100%" fill="#0d1117" rx="8"/>
   <g class="frame f0">
-    <text x="155" y="40" class="txt glitch">░█╗   ██╗███████╗ ██████╗████████╗ ██████╗ ██████╗ </text>
-    <text x="155" y="60" class="txt glitch">░█║   ██║██╔════╝██╔════╝╚══██╔══╝██╔═══██╗██╔══██╗</text>
-    <text x="155" y="80" class="txt glitch">░█║   ██║█████╗  ██║        ██║   ██║   ██║██████╔╝</text>
-    <text x="155" y="100" class="txt glitch">╚██╗ ██╔╝██╔══╝  ██║        ██║   ██║   ██║██╔══██╗</text>
-    <text x="155" y="120" class="txt glitch"> ╚████╔╝ ███████╗╚██████╗   ██║   ╚██████╔╝██║  ██║</text>
-    <text x="155" y="140" class="txt glitch">  ╚═══╝  ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝</text>
+    <text x="155" y="40" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">░█╗   ██╗███████╗ ██████╗████████╗ ██████╗ ██████╗ </text>
+    <text x="155" y="60" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">░█║   ██║██╔════╝██╔════╝╚══██╔══╝██╔═══██╗██╔══██╗</text>
+    <text x="155" y="80" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">░█║   ██║█████╗  ██║        ██║   ██║   ██║██████╔╝</text>
+    <text x="155" y="100" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">╚██╗ ██╔╝██╔══╝  ██║        ██║   ██║   ██║██╔══██╗</text>
+    <text x="155" y="120" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;"> ╚████╔╝ ███████╗╚██████╗   ██║   ╚██████╔╝██║  ██║</text>
+    <text x="155" y="140" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">  ╚═══╝  ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝</text>
   </g>
   <g class="frame f1">
-    <text x="155" y="40" class="txt glitch">░░╗   ██╗███████╗ ██████╗████████╗ ██████╗ ██████╗ </text>
-    <text x="155" y="60" class="txt glitch">░░║   ██║██╔════╝██╔════╝╚══██╔══╝██╔═══██╗██╔══██╗</text>
-    <text x="155" y="80" class="txt glitch">░░║   ██║█████╗  ██║        ██║   ██║   ██║██████╔╝</text>
-    <text x="155" y="100" class="txt glitch">╚░█╗ ██╔╝██╔══╝  ██║        ██║   ██║   ██║██╔══██╗</text>
-    <text x="155" y="120" class="txt glitch"> ╚████╔╝ ███████╗╚██████╗   ██║   ╚██████╔╝██║  ██║</text>
-    <text x="155" y="140" class="txt glitch">  ╚═══╝  ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝</text>
+    <text x="155" y="40" style="font-family:'Courier New',monospace;font-size:16px;fill:#ff003c;white-space:pre;font-weight:bold;">░█╗   ██╗███▒███╗ █░████╗██ ███▓█╗  █████╗ ██████╗ </text>
+    <text x="155" y="60" style="font-family:'Courier New',monospace;font-size:16px;fill:#ff003c;white-space:pre;font-weight:bold;">░█║   █ ║██╔════╝█░╔════╝╚══█▒╔══╝██╔═══█ ╗██╔══██╗</text>
+    <text x="155" y="80" style="font-family:'Courier New',monospace;font-size:16px;fill:#ff003c;white-space:pre;font-weight:bold;">░█║   ██║█████╗  ██║        ██║   ██║   ██║█████▒╔╝</text>
+    <text x="155" y="100" style="font-family:'Courier New',monospace;font-size:16px;fill:#ff003c;white-space:pre;font-weight:bold;">╚██╗ ██╔╝██╔══╝  ██║        ██║   ██║   ██║██╔══██╗</text>
+    <text x="155" y="120" style="font-family:'Courier New',monospace;font-size:16px;fill:#ff003c;white-space:pre;font-weight:bold;"> ╚████╔╝ ███████╗╚██████╗   ██║   ╚████▓█╔╝▓█║  ░█║</text>
+    <text x="155" y="140" style="font-family:'Courier New',monospace;font-size:16px;fill:#ff003c;white-space:pre;font-weight:bold;">  ╚═══╝  ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝</text>
   </g>
   <g class="frame f2">
-    <text x="155" y="40" class="txt glitch">▒░╗   ██╗███████╗ ██████╗████████╗ ██████╗ ██████╗ </text>
-    <text x="155" y="60" class="txt glitch">▒░║   ██║██╔════╝██╔════╝╚══██╔══╝██╔═══██╗██╔══██╗</text>
-    <text x="155" y="80" class="txt glitch">▒░║   ██║█████╗  ██║        ██║   ██║   ██║██████╔╝</text>
-    <text x="155" y="100" class="txt glitch">╚░░╗ ██╔╝██╔══╝  ██║        ██║   ██║   ██║██╔══██╗</text>
-    <text x="155" y="120" class="txt glitch"> ╚░███╔╝ ███████╗╚██████╗   ██║   ╚██████╔╝██║  ██║</text>
-    <text x="155" y="140" class="txt glitch">  ╚═══╝  ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝</text>
+    <text x="155" y="40" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">░░╗   ██╗███████╗ ██████╗████████╗ ██████╗ ██████╗ </text>
+    <text x="155" y="60" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">░░║   ██║██╔════╝██╔════╝╚══██╔══╝██╔═══██╗██╔══██╗</text>
+    <text x="155" y="80" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">░░║   ██║█████╗  ██║        ██║   ██║   ██║██████╔╝</text>
+    <text x="155" y="100" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">╚░█╗ ██╔╝██╔══╝  ██║        ██║   ██║   ██║██╔══██╗</text>
+    <text x="155" y="120" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;"> ╚████╔╝ ███████╗╚██████╗   ██║   ╚██████╔╝██║  ██║</text>
+    <text x="155" y="140" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">  ╚═══╝  ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝</text>
   </g>
   <g class="frame f3">
-    <text x="155" y="40" class="txt glitch">▒▒╗   ██╗███████╗ ██████╗████████╗ ██████╗ ██████╗ </text>
-    <text x="155" y="60" class="txt glitch">▒▒║   ██║██╔════╝██╔════╝╚══██╔══╝██╔═══██╗██╔══██╗</text>
-    <text x="155" y="80" class="txt glitch">▒▒║   ██║█████╗  ██║        ██║   ██║   ██║██████╔╝</text>
-    <text x="155" y="100" class="txt glitch">╚▒░╗ ██╔╝██╔══╝  ██║        ██║   ██║   ██║██╔══██╗</text>
-    <text x="155" y="120" class="txt glitch"> ╚░░██╔╝ ███████╗╚██████╗   ██║   ╚██████╔╝██║  ██║</text>
-    <text x="155" y="140" class="txt glitch">  ╚═══╝  ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝</text>
+    <text x="155" y="40" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">▒░╗   ██╗███████╗ ██████╗████████╗ ██████╗ ██████╗ </text>
+    <text x="155" y="60" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">▒░║   ██║██╔════╝██╔════╝╚══██╔══╝██╔═══██╗██╔══██╗</text>
+    <text x="155" y="80" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">▒░║   ██║█████╗  ██║        ██║   ██║   ██║██████╔╝</text>
+    <text x="155" y="100" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">╚░░╗ ██╔╝██╔══╝  ██║        ██║   ██║   ██║██╔══██╗</text>
+    <text x="155" y="120" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;"> ╚░███╔╝ ███████╗╚██████╗   ██║   ╚██████╔╝██║  ██║</text>
+    <text x="155" y="140" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">  ╚═══╝  ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝</text>
   </g>
   <g class="frame f4">
-    <text x="155" y="40" class="txt glitch">▓▒╗   ██╗███████╗ ██████╗████████╗ ██████╗ ██████╗ </text>
-    <text x="155" y="60" class="txt glitch">▓▒║   ██║██╔════╝██╔════╝╚══██╔══╝██╔═══██╗██╔══██╗</text>
-    <text x="155" y="80" class="txt glitch">▓▒║   ██║█████╗  ██║        ██║   ██║   ██║██████╔╝</text>
-    <text x="155" y="100" class="txt glitch">╚▒▒╗ ██╔╝██╔══╝  ██║        ██║   ██║   ██║██╔══██╗</text>
-    <text x="155" y="120" class="txt glitch"> ╚▒░░█╔╝ ███████╗╚██████╗   ██║   ╚██████╔╝██║  ██║</text>
-    <text x="155" y="140" class="txt glitch">  ╚═══╝  ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝</text>
+    <text x="155" y="40" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">▒▒╗   ██╗███████╗ ██████╗████████╗ ██████╗ ██████╗ </text>
+    <text x="155" y="60" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">▒▒║   ██║██╔════╝██╔════╝╚══██╔══╝██╔═══██╗██╔══██╗</text>
+    <text x="155" y="80" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">▒▒║   ██║█████╗  ██║        ██║   ██║   ██║██████╔╝</text>
+    <text x="155" y="100" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">╚▒░╗ ██╔╝██╔══╝  ██║        ██║   ██║   ██║██╔══██╗</text>
+    <text x="155" y="120" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;"> ╚░░██╔╝ ███████╗╚██████╗   ██║   ╚██████╔╝██║  ██║</text>
+    <text x="155" y="140" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">  ╚═══╝  ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝</text>
   </g>
   <g class="frame f5">
-    <text x="155" y="40" class="txt glitch">▓▓╗   ██╗███████╗ ██████╗████████╗ ██████╗ ██████╗ </text>
-    <text x="155" y="60" class="txt glitch">▓▓║   ██║██╔════╝██╔════╝╚══██╔══╝██╔═══██╗██╔══██╗</text>
-    <text x="155" y="80" class="txt glitch">▓▓║   ██║█████╗  ██║        ██║   ██║   ██║██████╔╝</text>
-    <text x="155" y="100" class="txt glitch">╚▓▒╗ ░█╔╝██╔══╝  ██║        ██║   ██║   ██║██╔══██╗</text>
-    <text x="155" y="120" class="txt glitch"> ╚▒▒░░╔╝ ███████╗╚██████╗   ██║   ╚██████╔╝██║  ██║</text>
-    <text x="155" y="140" class="txt glitch">  ╚═══╝  ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝</text>
+    <text x="155" y="40" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">▓▒╗   ██╗███████╗ ██████╗████████╗ ██████╗ ██████╗ </text>
+    <text x="155" y="60" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">▓▒║   ██║██╔════╝██╔════╝╚══██╔══╝██╔═══██╗██╔══██╗</text>
+    <text x="155" y="80" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">▓▒║   ██║█████╗  ██║        ██║   ██║   ██║██████╔╝</text>
+    <text x="155" y="100" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">╚▒▒╗ ██╔╝██╔══╝  ██║        ██║   ██║   ██║██╔══██╗</text>
+    <text x="155" y="120" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;"> ╚▒░░█╔╝ ███████╗╚██████╗   ██║   ╚██████╔╝██║  ██║</text>
+    <text x="155" y="140" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">  ╚═══╝  ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝</text>
   </g>
   <g class="frame f6">
-    <text x="155" y="40" class="txt glitch">█▓╗   ░█╗███████╗ ██████╗████████╗ ██████╗ ██████╗ </text>
-    <text x="155" y="60" class="txt glitch">█▓║   ░█║██╔════╝██╔════╝╚══██╔══╝██╔═══██╗██╔══██╗</text>
-    <text x="155" y="80" class="txt glitch">█▓║   ░█║█████╗  ██║        ██║   ██║   ██║██████╔╝</text>
-    <text x="155" y="100" class="txt glitch">╚▓▓╗ ░░╔╝██╔══╝  ██║        ██║   ██║   ██║██╔══██╗</text>
-    <text x="155" y="120" class="txt glitch"> ╚▓▒▒░╔╝ ███████╗╚██████╗   ██║   ╚██████╔╝██║  ██║</text>
-    <text x="155" y="140" class="txt glitch">  ╚═══╝  ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝</text>
+    <text x="155" y="40" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">▓▓╗   ██╗███████╗ ██████╗████████╗ ██████╗ ██████╗ </text>
+    <text x="155" y="60" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">▓▓║   ██║██╔════╝██╔════╝╚══██╔══╝██╔═══██╗██╔══██╗</text>
+    <text x="155" y="80" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">▓▓║   ██║█████╗  ██║        ██║   ██║   ██║██████╔╝</text>
+    <text x="155" y="100" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">╚▓▒╗ ░█╔╝██╔══╝  ██║        ██║   ██║   ██║██╔══██╗</text>
+    <text x="155" y="120" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;"> ╚▒▒░░╔╝ ███████╗╚██████╗   ██║   ╚██████╔╝██║  ██║</text>
+    <text x="155" y="140" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">  ╚═══╝  ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝</text>
   </g>
   <g class="frame f7">
-    <text x="155" y="40" class="txt glitch">██╗   ░░╗███████╗ ██████╗████████╗ ██████╗ ██████╗ </text>
-    <text x="155" y="60" class="txt glitch">██║   ░░║██╔════╝██╔════╝╚══██╔══╝██╔═══██╗██╔══██╗</text>
-    <text x="155" y="80" class="txt glitch">██║   ░░║█████╗  ██║        ██║   ██║   ██║██████╔╝</text>
-    <text x="155" y="100" class="txt glitch">╚█▓╗ ▒░╔╝██╔══╝  ██║        ██║   ██║   ██║██╔══██╗</text>
-    <text x="155" y="120" class="txt glitch"> ╚▓▓▒▒╔╝ ███████╗╚██████╗   ██║   ╚██████╔╝██║  ██║</text>
-    <text x="155" y="140" class="txt glitch">  ╚═══╝  ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝</text>
+    <text x="155" y="40" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">█▓╗   ░█╗███████╗ ██████╗████████╗ ██████╗ ██████╗ </text>
+    <text x="155" y="60" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">█▓║   ░█║██╔════╝██╔════╝╚══██╔══╝██╔═══██╗██╔══██╗</text>
+    <text x="155" y="80" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">█▓║   ░█║█████╗  ██║        ██║   ██║   ██║██████╔╝</text>
+    <text x="155" y="100" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">╚▓▓╗ ░░╔╝██╔══╝  ██║        ██║   ██║   ██║██╔══██╗</text>
+    <text x="155" y="120" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;"> ╚▓▒▒░╔╝ ███████╗╚██████╗   ██║   ╚██████╔╝██║  ██║</text>
+    <text x="155" y="140" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">  ╚═══╝  ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝</text>
   </g>
   <g class="frame f8">
-    <text x="155" y="40" class="txt glitch">██╗   ▒░╗███████╗ ██████╗████████╗ ██████╗ ██████╗ </text>
-    <text x="155" y="60" class="txt glitch">██║   ▒░║██╔════╝██╔════╝╚══██╔══╝██╔═══██╗██╔══██╗</text>
-    <text x="155" y="80" class="txt glitch">██║   ▒░║█████╗  ██║        ██║   ██║   ██║██████╔╝</text>
-    <text x="155" y="100" class="txt glitch">╚██╗ ▒▒╔╝██╔══╝  ██║        ██║   ██║   ██║██╔══██╗</text>
-    <text x="155" y="120" class="txt glitch"> ╚█▓▓▒╔╝ ███████╗╚██████╗   ██║   ╚██████╔╝██║  ██║</text>
-    <text x="155" y="140" class="txt glitch">  ╚═══╝  ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝</text>
+    <text x="155" y="40" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██╗   ░░╗███████╗ ██████╗████████╗ ██████╗ ██████╗ </text>
+    <text x="155" y="60" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██║   ░░║██╔════╝██╔════╝╚══██╔══╝██╔═══██╗██╔══██╗</text>
+    <text x="155" y="80" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██║   ░░║█████╗  ██║        ██║   ██║   ██║██████╔╝</text>
+    <text x="155" y="100" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">╚█▓╗ ▒░╔╝██╔══╝  ██║        ██║   ██║   ██║██╔══██╗</text>
+    <text x="155" y="120" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;"> ╚▓▓▒▒╔╝ ███████╗╚██████╗   ██║   ╚██████╔╝██║  ██║</text>
+    <text x="155" y="140" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">  ╚═══╝  ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝</text>
   </g>
   <g class="frame f9">
-    <text x="155" y="40" class="txt glitch">██╗   ▒▒╗░██████╗ ██████╗████████╗ ██████╗ ██████╗ </text>
-    <text x="155" y="60" class="txt glitch">██║   ▒▒║░█╔════╝██╔════╝╚══██╔══╝██╔═══██╗██╔══██╗</text>
-    <text x="155" y="80" class="txt glitch">██║   ▒▒║░████╗  ██║        ██║   ██║   ██║██████╔╝</text>
-    <text x="155" y="100" class="txt glitch">╚██╗ ▓▒╔╝░█╔══╝  ██║        ██║   ██║   ██║██╔══██╗</text>
-    <text x="155" y="120" class="txt glitch"> ╚██▓▓╔╝ ░██████╗╚██████╗   ██║   ╚██████╔╝██║  ██║</text>
-    <text x="155" y="140" class="txt glitch">  ╚═══╝  ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝</text>
+    <text x="155" y="40" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██╗   ▒░╗███████╗ ██████╗████████╗ ██████╗ ██████╗ </text>
+    <text x="155" y="60" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██║   ▒░║██╔════╝██╔════╝╚══██╔══╝██╔═══██╗██╔══██╗</text>
+    <text x="155" y="80" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██║   ▒░║█████╗  ██║        ██║   ██║   ██║██████╔╝</text>
+    <text x="155" y="100" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">╚██╗ ▒▒╔╝██╔══╝  ██║        ██║   ██║   ██║██╔══██╗</text>
+    <text x="155" y="120" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;"> ╚█▓▓▒╔╝ ███████╗╚██████╗   ██║   ╚██████╔╝██║  ██║</text>
+    <text x="155" y="140" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">  ╚═══╝  ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝</text>
   </g>
   <g class="frame f10">
-    <text x="155" y="40" class="txt glitch">██╗   ▓▒╗░░█████╗ ██████╗████████╗ ██████╗ ██████╗ </text>
-    <text x="155" y="60" class="txt glitch">██║   ▓▒║░░╔════╝██╔════╝╚══██╔══╝██╔═══██╗██╔══██╗</text>
-    <text x="155" y="80" class="txt glitch">██║   ▓▒║░░███╗  ██║        ██║   ██║   ██║██████╔╝</text>
-    <text x="155" y="100" class="txt glitch">╚██╗ ▓▓╔╝░░╔══╝  ██║        ██║   ██║   ██║██╔══██╗</text>
-    <text x="155" y="120" class="txt glitch"> ╚███▓╔╝ ░░█████╗╚██████╗   ██║   ╚██████╔╝██║  ██║</text>
-    <text x="155" y="140" class="txt glitch">  ╚═══╝  ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝</text>
+    <text x="155" y="40" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██╗   ▒▒╗░██████╗ ██████╗████████╗ ██████╗ ██████╗ </text>
+    <text x="155" y="60" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██║   ▒▒║░█╔════╝██╔════╝╚══██╔══╝██╔═══██╗██╔══██╗</text>
+    <text x="155" y="80" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██║   ▒▒║░████╗  ██║        ██║   ██║   ██║██████╔╝</text>
+    <text x="155" y="100" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">╚██╗ ▓▒╔╝░█╔══╝  ██║        ██║   ██║   ██║██╔══██╗</text>
+    <text x="155" y="120" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;"> ╚██▓▓╔╝ ░██████╗╚██████╗   ██║   ╚██████╔╝██║  ██║</text>
+    <text x="155" y="140" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">  ╚═══╝  ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝</text>
   </g>
   <g class="frame f11">
-    <text x="155" y="40" class="txt glitch">██╗   ▓▓╗▒░░████╗ ██████╗████████╗ ██████╗ ██████╗ </text>
-    <text x="155" y="60" class="txt glitch">██║   ▓▓║▒░╔════╝██╔════╝╚══██╔══╝██╔═══██╗██╔══██╗</text>
-    <text x="155" y="80" class="txt glitch">██║   ▓▓║▒░░██╗  ██║        ██║   ██║   ██║██████╔╝</text>
-    <text x="155" y="100" class="txt glitch">╚██╗ █▓╔╝▒░╔══╝  ██║        ██║   ██║   ██║██╔══██╗</text>
-    <text x="155" y="120" class="txt glitch"> ╚████╔╝ ▒░░████╗╚██████╗   ██║   ╚██████╔╝██║  ██║</text>
-    <text x="155" y="140" class="txt glitch">  ╚═══╝  ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝</text>
+    <text x="155" y="40" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██╗   ▓▒╗░░█████╗ ██████╗████████╗ ██████╗ ██████╗ </text>
+    <text x="155" y="60" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██║   ▓▒║░░╔════╝██╔════╝╚══██╔══╝██╔═══██╗██╔══██╗</text>
+    <text x="155" y="80" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██║   ▓▒║░░███╗  ██║        ██║   ██║   ██║██████╔╝</text>
+    <text x="155" y="100" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">╚██╗ ▓▓╔╝░░╔══╝  ██║        ██║   ██║   ██║██╔══██╗</text>
+    <text x="155" y="120" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;"> ╚███▓╔╝ ░░█████╗╚██████╗   ██║   ╚██████╔╝██║  ██║</text>
+    <text x="155" y="140" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">  ╚═══╝  ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝</text>
   </g>
   <g class="frame f12">
-    <text x="155" y="40" class="txt glitch">██╗   █▓╗▒▒░░███╗ ██████╗████████╗ ██████╗ ██████╗ </text>
-    <text x="155" y="60" class="txt glitch">██║   █▓║▒▒╔════╝██╔════╝╚══██╔══╝██╔═══██╗██╔══██╗</text>
-    <text x="155" y="80" class="txt glitch">██║   █▓║▒▒░░█╗  ██║        ██║   ██║   ██║██████╔╝</text>
-    <text x="155" y="100" class="txt glitch">╚██╗ ██╔╝▒▒╔══╝  ██║        ██║   ██║   ██║██╔══██╗</text>
-    <text x="155" y="120" class="txt glitch"> ╚████╔╝ ▒▒░░███╗╚██████╗   ██║   ╚██████╔╝██║  ██║</text>
-    <text x="155" y="140" class="txt glitch">  ╚═══╝  ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝</text>
+    <text x="155" y="40" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██╗   ▓▓╗▒░░████╗ ██████╗████████╗ ██████╗ ██████╗ </text>
+    <text x="155" y="60" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██║   ▓▓║▒░╔════╝██╔════╝╚══██╔══╝██╔═══██╗██╔══██╗</text>
+    <text x="155" y="80" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██║   ▓▓║▒░░██╗  ██║        ██║   ██║   ██║██████╔╝</text>
+    <text x="155" y="100" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">╚██╗ █▓╔╝▒░╔══╝  ██║        ██║   ██║   ██║██╔══██╗</text>
+    <text x="155" y="120" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;"> ╚████╔╝ ▒░░████╗╚██████╗   ██║   ╚██████╔╝██║  ██║</text>
+    <text x="155" y="140" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">  ╚═══╝  ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝</text>
   </g>
   <g class="frame f13">
-    <text x="155" y="40" class="txt glitch">██╗   ██╗▓▒▒░░██╗ ██████╗████████╗ ██████╗ ██████╗ </text>
-    <text x="155" y="60" class="txt glitch">██║   ██║▓▒╔════╝██╔════╝╚══██╔══╝██╔═══██╗██╔══██╗</text>
-    <text x="155" y="80" class="txt glitch">██║   ██║▓▒▒░░╗  ██║        ██║   ██║   ██║██████╔╝</text>
-    <text x="155" y="100" class="txt glitch">╚██╗ ██╔╝▓▒╔══╝  ██║        ██║   ██║   ██║██╔══██╗</text>
-    <text x="155" y="120" class="txt glitch"> ╚████╔╝ ▓▒▒░░██╗╚██████╗   ██║   ╚██████╔╝██║  ██║</text>
-    <text x="155" y="140" class="txt glitch">  ╚═══╝  ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝</text>
+    <text x="155" y="40" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██╗   █▓╗▒▒░░███╗ ██████╗████████╗ ██████╗ ██████╗ </text>
+    <text x="155" y="60" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██║   █▓║▒▒╔════╝██╔════╝╚══██╔══╝██╔═══██╗██╔══██╗</text>
+    <text x="155" y="80" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██║   █▓║▒▒░░█╗  ██║        ██║   ██║   ██║██████╔╝</text>
+    <text x="155" y="100" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">╚██╗ ██╔╝▒▒╔══╝  ██║        ██║   ██║   ██║██╔══██╗</text>
+    <text x="155" y="120" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;"> ╚████╔╝ ▒▒░░███╗╚██████╗   ██║   ╚██████╔╝██║  ██║</text>
+    <text x="155" y="140" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">  ╚═══╝  ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝</text>
   </g>
   <g class="frame f14">
-    <text x="155" y="40" class="txt glitch">██╗   ██╗▓▓▒▒░░█╗ ██████╗████████╗ ██████╗ ██████╗ </text>
-    <text x="155" y="60" class="txt glitch">██║   ██║▓▓╔════╝██╔════╝╚══██╔══╝██╔═══██╗██╔══██╗</text>
-    <text x="155" y="80" class="txt glitch">██║   ██║▓▓▒▒░╗  ██║        ██║   ██║   ██║██████╔╝</text>
-    <text x="155" y="100" class="txt glitch">╚██╗ ██╔╝▓▓╔══╝  ██║        ██║   ██║   ██║██╔══██╗</text>
-    <text x="155" y="120" class="txt glitch"> ╚████╔╝ ▓▓▒▒░░█╗╚██████╗   ██║   ╚██████╔╝██║  ██║</text>
-    <text x="155" y="140" class="txt glitch">  ╚═══╝  ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝</text>
+    <text x="155" y="40" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██╗   ██╗▓▒▒░░██╗ ██████╗████████╗ ██████╗ ██████╗ </text>
+    <text x="155" y="60" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██║   ██║▓▒╔════╝██╔════╝╚══██╔══╝██╔═══██╗██╔══██╗</text>
+    <text x="155" y="80" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██║   ██║▓▒▒░░╗  ██║        ██║   ██║   ██║██████╔╝</text>
+    <text x="155" y="100" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">╚██╗ ██╔╝▓▒╔══╝  ██║        ██║   ██║   ██║██╔══██╗</text>
+    <text x="155" y="120" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;"> ╚████╔╝ ▓▒▒░░██╗╚██████╗   ██║   ╚██████╔╝██║  ██║</text>
+    <text x="155" y="140" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">  ╚═══╝  ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝</text>
   </g>
   <g class="frame f15">
-    <text x="155" y="40" class="txt glitch">██╗   ██╗█▓▓▒▒░░╗ ██████╗████████╗ ██████╗ ██████╗ </text>
-    <text x="155" y="60" class="txt glitch">██║   ██║█▓╔════╝██╔════╝╚══██╔══╝██╔═══██╗██╔══██╗</text>
-    <text x="155" y="80" class="txt glitch">██║   ██║█▓▓▒▒╗  ██║        ██║   ██║   ██║██████╔╝</text>
-    <text x="155" y="100" class="txt glitch">╚██╗ ██╔╝█▓╔══╝  ██║        ██║   ██║   ██║██╔══██╗</text>
-    <text x="155" y="120" class="txt glitch"> ╚████╔╝ █▓▓▒▒░░╗╚██████╗   ██║   ╚██████╔╝██║  ██║</text>
-    <text x="155" y="140" class="txt glitch">  ╚═══╝  ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝</text>
+    <text x="155" y="40" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██╗   ██╗▓▓▒▒░░█╗ ██████╗████████╗ ██████╗ ██████╗ </text>
+    <text x="155" y="60" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██║   ██║▓▓╔════╝██╔════╝╚══██╔══╝██╔═══██╗██╔══██╗</text>
+    <text x="155" y="80" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██║   ██║▓▓▒▒░╗  ██║        ██║   ██║   ██║██████╔╝</text>
+    <text x="155" y="100" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">╚██╗ ██╔╝▓▓╔══╝  ██║        ██║   ██║   ██║██╔══██╗</text>
+    <text x="155" y="120" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;"> ╚████╔╝ ▓▓▒▒░░█╗╚██████╗   ██║   ╚██████╔╝██║  ██║</text>
+    <text x="155" y="140" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">  ╚═══╝  ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝</text>
   </g>
   <g class="frame f16">
-    <text x="155" y="40" class="txt glitch">██╗   ██╗██▓▓▒▒░╗ ██████╗████████╗ ██████╗ ██████╗ </text>
-    <text x="155" y="60" class="txt glitch">██║   ██║██╔════╝██╔════╝╚══██╔══╝██╔═══██╗██╔══██╗</text>
-    <text x="155" y="80" class="txt glitch">██║   ██║██▓▓▒╗  ██║        ██║   ██║   ██║██████╔╝</text>
-    <text x="155" y="100" class="txt glitch">╚██╗ ██╔╝██╔══╝  ██║        ██║   ██║   ██║██╔══██╗</text>
-    <text x="155" y="120" class="txt glitch"> ╚████╔╝ ██▓▓▒▒░╗╚██████╗   ██║   ╚██████╔╝██║  ██║</text>
-    <text x="155" y="140" class="txt glitch">  ╚═══╝  ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝</text>
+    <text x="155" y="40" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██╗   ██╗█▓▓▒▒░░╗ ██████╗████████╗ ██████╗ ██████╗ </text>
+    <text x="155" y="60" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██║   ██║█▓╔════╝██╔════╝╚══██╔══╝██╔═══██╗██╔══██╗</text>
+    <text x="155" y="80" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██║   ██║█▓▓▒▒╗  ██║        ██║   ██║   ██║██████╔╝</text>
+    <text x="155" y="100" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">╚██╗ ██╔╝█▓╔══╝  ██║        ██║   ██║   ██║██╔══██╗</text>
+    <text x="155" y="120" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;"> ╚████╔╝ █▓▓▒▒░░╗╚██████╗   ██║   ╚██████╔╝██║  ██║</text>
+    <text x="155" y="140" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">  ╚═══╝  ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝</text>
   </g>
   <g class="frame f17">
-    <text x="155" y="40" class="txt glitch">██╗   ██╗███▓▓▒▒╗ ██████╗████████╗ ██████╗ ██████╗ </text>
-    <text x="155" y="60" class="txt glitch">██║   ██║██╔════╝░█╔════╝╚══██╔══╝██╔═══██╗██╔══██╗</text>
-    <text x="155" y="80" class="txt glitch">██║   ██║███▓▓╗  ░█║        ██║   ██║   ██║██████╔╝</text>
-    <text x="155" y="100" class="txt glitch">╚██╗ ██╔╝██╔══╝  ░█║        ██║   ██║   ██║██╔══██╗</text>
-    <text x="155" y="120" class="txt glitch"> ╚████╔╝ ███▓▓▒▒╗╚██████╗   ██║   ╚██████╔╝██║  ██║</text>
-    <text x="155" y="140" class="txt glitch">  ╚═══╝  ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝</text>
+    <text x="155" y="40" style="font-family:'Courier New',monospace;font-size:16px;fill:#ff003c;white-space:pre;font-weight:bold;">██╗   ██╗█▓▓▒▒░░╗ █████ ╗█████▓░▓╗ ██████╗ ██████╗ </text>
+    <text x="155" y="60" style="font-family:'Courier New',monospace;font-size:16px;fill:#ff003c;white-space:pre;font-weight:bold;">██║   ██║█▓╔════╝██╔════╝╚══██╔══╝█▒╔═══██╗ █╔══██╗</text>
+    <text x="155" y="80" style="font-family:'Courier New',monospace;font-size:16px;fill:#ff003c;white-space:pre;font-weight:bold;">██║   ██║▒▓▓▒▒╗  ██║        ██║   ██║   ██║▒██▓██╔╝</text>
+    <text x="155" y="100" style="font-family:'Courier New',monospace;font-size:16px;fill:#ff003c;white-space:pre;font-weight:bold;">╚██╗  █╔╝█▓╔══╝  █░║        ██║   ██║   ██║██╔══█▓╗</text>
+    <text x="155" y="120" style="font-family:'Courier New',monospace;font-size:16px;fill:#ff003c;white-space:pre;font-weight:bold;"> ╚████╔╝ █▓▓▒▒░░╗╚▒█████╗   ██║   ╚███▓██╔╝██║  ██║</text>
+    <text x="155" y="140" style="font-family:'Courier New',monospace;font-size:16px;fill:#ff003c;white-space:pre;font-weight:bold;">  ╚═══╝  ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝</text>
   </g>
   <g class="frame f18">
-    <text x="155" y="40" class="txt glitch">██╗   ██╗████▓▓▒╗ ░█████╗████████╗ ██████╗ ██████╗ </text>
-    <text x="155" y="60" class="txt glitch">██║   ██║██╔════╝░░╔════╝╚══██╔══╝██╔═══██╗██╔══██╗</text>
-    <text x="155" y="80" class="txt glitch">██║   ██║████▓╗  ░░║        ██║   ██║   ██║██████╔╝</text>
-    <text x="155" y="100" class="txt glitch">╚██╗ ██╔╝██╔══╝  ░░║        ██║   ██║   ██║██╔══██╗</text>
-    <text x="155" y="120" class="txt glitch"> ╚████╔╝ ████▓▓▒╗╚░█████╗   ██║   ╚██████╔╝██║  ██║</text>
-    <text x="155" y="140" class="txt glitch">  ╚═══╝  ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝</text>
+    <text x="155" y="40" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██╗   ██╗██▓▓▒▒░╗ ██████╗████████╗ ██████╗ ██████╗ </text>
+    <text x="155" y="60" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██║   ██║██╔════╝██╔════╝╚══██╔══╝██╔═══██╗██╔══██╗</text>
+    <text x="155" y="80" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██║   ██║██▓▓▒╗  ██║        ██║   ██║   ██║██████╔╝</text>
+    <text x="155" y="100" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">╚██╗ ██╔╝██╔══╝  ██║        ██║   ██║   ██║██╔══██╗</text>
+    <text x="155" y="120" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;"> ╚████╔╝ ██▓▓▒▒░╗╚██████╗   ██║   ╚██████╔╝██║  ██║</text>
+    <text x="155" y="140" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">  ╚═══╝  ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝</text>
   </g>
   <g class="frame f19">
-    <text x="155" y="40" class="txt glitch">██╗   ██╗█████▓▓╗ ░░████╗████████╗ ██████╗ ██████╗ </text>
-    <text x="155" y="60" class="txt glitch">██║   ██║██╔════╝▒░╔════╝╚══██╔══╝██╔═══██╗██╔══██╗</text>
-    <text x="155" y="80" class="txt glitch">██║   ██║█████╗  ▒░║        ██║   ██║   ██║██████╔╝</text>
-    <text x="155" y="100" class="txt glitch">╚██╗ ██╔╝██╔══╝  ▒░║        ██║   ██║   ██║██╔══██╗</text>
-    <text x="155" y="120" class="txt glitch"> ╚████╔╝ █████▓▓╗╚░░████╗   ██║   ╚██████╔╝██║  ██║</text>
-    <text x="155" y="140" class="txt glitch">  ╚═══╝  ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝</text>
+    <text x="155" y="40" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██╗   ██╗███▓▓▒▒╗ ██████╗████████╗ ██████╗ ██████╗ </text>
+    <text x="155" y="60" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██║   ██║██╔════╝░█╔════╝╚══██╔══╝██╔═══██╗██╔══██╗</text>
+    <text x="155" y="80" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██║   ██║███▓▓╗  ░█║        ██║   ██║   ██║██████╔╝</text>
+    <text x="155" y="100" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">╚██╗ ██╔╝██╔══╝  ░█║        ██║   ██║   ██║██╔══██╗</text>
+    <text x="155" y="120" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;"> ╚████╔╝ ███▓▓▒▒╗╚██████╗   ██║   ╚██████╔╝██║  ██║</text>
+    <text x="155" y="140" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">  ╚═══╝  ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝</text>
   </g>
   <g class="frame f20">
-    <text x="155" y="40" class="txt glitch">██╗   ██╗██████▓╗ ▒░░███╗████████╗ ██████╗ ██████╗ </text>
-    <text x="155" y="60" class="txt glitch">██║   ██║██╔════╝▒▒╔════╝╚══██╔══╝██╔═══██╗██╔══██╗</text>
-    <text x="155" y="80" class="txt glitch">██║   ██║█████╗  ▒▒║        ██║   ██║   ██║██████╔╝</text>
-    <text x="155" y="100" class="txt glitch">╚██╗ ██╔╝██╔══╝  ▒▒║        ██║   ██║   ██║██╔══██╗</text>
-    <text x="155" y="120" class="txt glitch"> ╚████╔╝ ██████▓╗╚▒░░███╗   ██║   ╚██████╔╝██║  ██║</text>
-    <text x="155" y="140" class="txt glitch">  ╚═══╝  ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝</text>
+    <text x="155" y="40" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██╗   ██╗████▓▓▒╗ ░█████╗████████╗ ██████╗ ██████╗ </text>
+    <text x="155" y="60" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██║   ██║██╔════╝░░╔════╝╚══██╔══╝██╔═══██╗██╔══██╗</text>
+    <text x="155" y="80" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██║   ██║████▓╗  ░░║        ██║   ██║   ██║██████╔╝</text>
+    <text x="155" y="100" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">╚██╗ ██╔╝██╔══╝  ░░║        ██║   ██║   ██║██╔══██╗</text>
+    <text x="155" y="120" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;"> ╚████╔╝ ████▓▓▒╗╚░█████╗   ██║   ╚██████╔╝██║  ██║</text>
+    <text x="155" y="140" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">  ╚═══╝  ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝</text>
   </g>
   <g class="frame f21">
-    <text x="155" y="40" class="txt glitch">██╗   ██╗███████╗ ▒▒░░██╗████████╗ ██████╗ ██████╗ </text>
-    <text x="155" y="60" class="txt glitch">██║   ██║██╔════╝▓▒╔════╝╚══██╔══╝██╔═══██╗██╔══██╗</text>
-    <text x="155" y="80" class="txt glitch">██║   ██║█████╗  ▓▒║        ██║   ██║   ██║██████╔╝</text>
-    <text x="155" y="100" class="txt glitch">╚██╗ ██╔╝██╔══╝  ▓▒║        ██║   ██║   ██║██╔══██╗</text>
-    <text x="155" y="120" class="txt glitch"> ╚████╔╝ ███████╗╚▒▒░░██╗   ██║   ╚██████╔╝██║  ██║</text>
-    <text x="155" y="140" class="txt glitch">  ╚═══╝  ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝</text>
+    <text x="155" y="40" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██╗   ██╗█████▓▓╗ ░░████╗████████╗ ██████╗ ██████╗ </text>
+    <text x="155" y="60" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██║   ██║██╔════╝▒░╔════╝╚══██╔══╝██╔═══██╗██╔══██╗</text>
+    <text x="155" y="80" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██║   ██║█████╗  ▒░║        ██║   ██║   ██║██████╔╝</text>
+    <text x="155" y="100" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">╚██╗ ██╔╝██╔══╝  ▒░║        ██║   ██║   ██║██╔══██╗</text>
+    <text x="155" y="120" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;"> ╚████╔╝ █████▓▓╗╚░░████╗   ██║   ╚██████╔╝██║  ██║</text>
+    <text x="155" y="140" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">  ╚═══╝  ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝</text>
   </g>
   <g class="frame f22">
-    <text x="155" y="40" class="txt glitch">██╗   ██╗███████╗ ▓▒▒░░█╗████████╗ ██████╗ ██████╗ </text>
-    <text x="155" y="60" class="txt glitch">██║   ██║██╔════╝▓▓╔════╝╚══██╔══╝██╔═══██╗██╔══██╗</text>
-    <text x="155" y="80" class="txt glitch">██║   ██║█████╗  ▓▓║        ██║   ██║   ██║██████╔╝</text>
-    <text x="155" y="100" class="txt glitch">╚██╗ ██╔╝██╔══╝  ▓▓║        ██║   ██║   ██║██╔══██╗</text>
-    <text x="155" y="120" class="txt glitch"> ╚████╔╝ ███████╗╚▓▒▒░░█╗   ██║   ╚██████╔╝██║  ██║</text>
-    <text x="155" y="140" class="txt glitch">  ╚═══╝  ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝</text>
+    <text x="155" y="40" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██╗   ██╗██████▓╗ ▒░░███╗████████╗ ██████╗ ██████╗ </text>
+    <text x="155" y="60" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██║   ██║██╔════╝▒▒╔════╝╚══██╔══╝██╔═══██╗██╔══██╗</text>
+    <text x="155" y="80" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██║   ██║█████╗  ▒▒║        ██║   ██║   ██║██████╔╝</text>
+    <text x="155" y="100" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">╚██╗ ██╔╝██╔══╝  ▒▒║        ██║   ██║   ██║██╔══██╗</text>
+    <text x="155" y="120" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;"> ╚████╔╝ ██████▓╗╚▒░░███╗   ██║   ╚██████╔╝██║  ██║</text>
+    <text x="155" y="140" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">  ╚═══╝  ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝</text>
   </g>
   <g class="frame f23">
-    <text x="155" y="40" class="txt glitch">██╗   ██╗███████╗ ▓▓▒▒░░╗████████╗ ██████╗ ██████╗ </text>
-    <text x="155" y="60" class="txt glitch">██║   ██║██╔════╝█▓╔════╝╚══██╔══╝██╔═══██╗██╔══██╗</text>
-    <text x="155" y="80" class="txt glitch">██║   ██║█████╗  █▓║        ██║   ██║   ██║██████╔╝</text>
-    <text x="155" y="100" class="txt glitch">╚██╗ ██╔╝██╔══╝  █▓║        ██║   ██║   ██║██╔══██╗</text>
-    <text x="155" y="120" class="txt glitch"> ╚████╔╝ ███████╗╚▓▓▒▒░░╗   ██║   ╚██████╔╝██║  ██║</text>
-    <text x="155" y="140" class="txt glitch">  ╚═══╝  ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝</text>
+    <text x="155" y="40" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██╗   ██╗███████╗ ▒▒░░██╗████████╗ ██████╗ ██████╗ </text>
+    <text x="155" y="60" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██║   ██║██╔════╝▓▒╔════╝╚══██╔══╝██╔═══██╗██╔══██╗</text>
+    <text x="155" y="80" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██║   ██║█████╗  ▓▒║        ██║   ██║   ██║██████╔╝</text>
+    <text x="155" y="100" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">╚██╗ ██╔╝██╔══╝  ▓▒║        ██║   ██║   ██║██╔══██╗</text>
+    <text x="155" y="120" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;"> ╚████╔╝ ███████╗╚▒▒░░██╗   ██║   ╚██████╔╝██║  ██║</text>
+    <text x="155" y="140" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">  ╚═══╝  ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝</text>
   </g>
   <g class="frame f24">
-    <text x="155" y="40" class="txt glitch">██╗   ██╗███████╗ █▓▓▒▒░╗████████╗ ██████╗ ██████╗ </text>
-    <text x="155" y="60" class="txt glitch">██║   ██║██╔════╝██╔════╝╚══██╔══╝██╔═══██╗██╔══██╗</text>
-    <text x="155" y="80" class="txt glitch">██║   ██║█████╗  ██║        ██║   ██║   ██║██████╔╝</text>
-    <text x="155" y="100" class="txt glitch">╚██╗ ██╔╝██╔══╝  ██║        ██║   ██║   ██║██╔══██╗</text>
-    <text x="155" y="120" class="txt glitch"> ╚████╔╝ ███████╗╚█▓▓▒▒░╗   ██║   ╚██████╔╝██║  ██║</text>
-    <text x="155" y="140" class="txt glitch">  ╚═══╝  ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝</text>
+    <text x="155" y="40" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██╗   ██╗███████╗ ▓▒▒░░█╗████████╗ ██████╗ ██████╗ </text>
+    <text x="155" y="60" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██║   ██║██╔════╝▓▓╔════╝╚══██╔══╝██╔═══██╗██╔══██╗</text>
+    <text x="155" y="80" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██║   ██║█████╗  ▓▓║        ██║   ██║   ██║██████╔╝</text>
+    <text x="155" y="100" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">╚██╗ ██╔╝██╔══╝  ▓▓║        ██║   ██║   ██║██╔══██╗</text>
+    <text x="155" y="120" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;"> ╚████╔╝ ███████╗╚▓▒▒░░█╗   ██║   ╚██████╔╝██║  ██║</text>
+    <text x="155" y="140" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">  ╚═══╝  ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝</text>
   </g>
   <g class="frame f25">
-    <text x="155" y="40" class="txt glitch">██╗   ██╗███████╗ ██▓▓▒▒╗░███████╗ ██████╗ ██████╗ </text>
-    <text x="155" y="60" class="txt glitch">██║   ██║██╔════╝██╔════╝╚══██╔══╝██╔═══██╗██╔══██╗</text>
-    <text x="155" y="80" class="txt glitch">██║   ██║█████╗  ██║        ██║   ██║   ██║██████╔╝</text>
-    <text x="155" y="100" class="txt glitch">╚██╗ ██╔╝██╔══╝  ██║        ██║   ██║   ██║██╔══██╗</text>
-    <text x="155" y="120" class="txt glitch"> ╚████╔╝ ███████╗╚██▓▓▒▒╗   ██║   ╚██████╔╝██║  ██║</text>
-    <text x="155" y="140" class="txt glitch">  ╚═══╝  ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝</text>
+    <text x="155" y="40" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██╗   ██╗███████╗ ▓▓▒▒░░╗████████╗ ██████╗ ██████╗ </text>
+    <text x="155" y="60" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██║   ██║██╔════╝█▓╔════╝╚══██╔══╝██╔═══██╗██╔══██╗</text>
+    <text x="155" y="80" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██║   ██║█████╗  █▓║        ██║   ██║   ██║██████╔╝</text>
+    <text x="155" y="100" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">╚██╗ ██╔╝██╔══╝  █▓║        ██║   ██║   ██║██╔══██╗</text>
+    <text x="155" y="120" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;"> ╚████╔╝ ███████╗╚▓▓▒▒░░╗   ██║   ╚██████╔╝██║  ██║</text>
+    <text x="155" y="140" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">  ╚═══╝  ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝</text>
   </g>
   <g class="frame f26">
-    <text x="155" y="40" class="txt glitch">██╗   ██╗███████╗ ███▓▓▒╗░░██████╗ ██████╗ ██████╗ </text>
-    <text x="155" y="60" class="txt glitch">██║   ██║██╔════╝██╔════╝╚══██╔══╝██╔═══██╗██╔══██╗</text>
-    <text x="155" y="80" class="txt glitch">██║   ██║█████╗  ██║        ██║   ██║   ██║██████╔╝</text>
-    <text x="155" y="100" class="txt glitch">╚██╗ ██╔╝██╔══╝  ██║        ██║   ██║   ██║██╔══██╗</text>
-    <text x="155" y="120" class="txt glitch"> ╚████╔╝ ███████╗╚███▓▓▒╗   ██║   ╚██████╔╝██║  ██║</text>
-    <text x="155" y="140" class="txt glitch">  ╚═══╝  ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝</text>
+    <text x="155" y="40" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██╗   ██╗███████╗ █▓▓▒▒░╗████████╗ ██████╗ ██████╗ </text>
+    <text x="155" y="60" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██║   ██║██╔════╝██╔════╝╚══██╔══╝██╔═══██╗██╔══██╗</text>
+    <text x="155" y="80" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██║   ██║█████╗  ██║        ██║   ██║   ██║██████╔╝</text>
+    <text x="155" y="100" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">╚██╗ ██╔╝██╔══╝  ██║        ██║   ██║   ██║██╔══██╗</text>
+    <text x="155" y="120" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;"> ╚████╔╝ ███████╗╚█▓▓▒▒░╗   ██║   ╚██████╔╝██║  ██║</text>
+    <text x="155" y="140" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">  ╚═══╝  ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝</text>
   </g>
   <g class="frame f27">
-    <text x="155" y="40" class="txt glitch">██╗   ██╗███████╗ ████▓▓╗▒░░█████╗ ██████╗ ██████╗ </text>
-    <text x="155" y="60" class="txt glitch">██║   ██║██╔════╝██╔════╝╚══██╔══╝██╔═══██╗██╔══██╗</text>
-    <text x="155" y="80" class="txt glitch">██║   ██║█████╗  ██║        ██║   ██║   ██║██████╔╝</text>
-    <text x="155" y="100" class="txt glitch">╚██╗ ██╔╝██╔══╝  ██║        ██║   ██║   ██║██╔══██╗</text>
-    <text x="155" y="120" class="txt glitch"> ╚████╔╝ ███████╗╚████▓▓╗   ██║   ╚██████╔╝██║  ██║</text>
-    <text x="155" y="140" class="txt glitch">  ╚═══╝  ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝</text>
+    <text x="155" y="40" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██╗   ██╗███████╗ ██▓▓▒▒╗░███████╗ ██████╗ ██████╗ </text>
+    <text x="155" y="60" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██║   ██║██╔════╝██╔════╝╚══██╔══╝██╔═══██╗██╔══██╗</text>
+    <text x="155" y="80" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██║   ██║█████╗  ██║        ██║   ██║   ██║██████╔╝</text>
+    <text x="155" y="100" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">╚██╗ ██╔╝██╔══╝  ██║        ██║   ██║   ██║██╔══██╗</text>
+    <text x="155" y="120" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;"> ╚████╔╝ ███████╗╚██▓▓▒▒╗   ██║   ╚██████╔╝██║  ██║</text>
+    <text x="155" y="140" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">  ╚═══╝  ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝</text>
   </g>
   <g class="frame f28">
-    <text x="155" y="40" class="txt glitch">██╗   ██╗███████╗ █████▓╗▒▒░░████╗ ██████╗ ██████╗ </text>
-    <text x="155" y="60" class="txt glitch">██║   ██║██╔════╝██╔════╝╚══░█╔══╝██╔═══██╗██╔══██╗</text>
-    <text x="155" y="80" class="txt glitch">██║   ██║█████╗  ██║        ░█║   ██║   ██║██████╔╝</text>
-    <text x="155" y="100" class="txt glitch">╚██╗ ██╔╝██╔══╝  ██║        ░█║   ██║   ██║██╔══██╗</text>
-    <text x="155" y="120" class="txt glitch"> ╚████╔╝ ███████╗╚█████▓╗   ░█║   ╚██████╔╝██║  ██║</text>
-    <text x="155" y="140" class="txt glitch">  ╚═══╝  ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝</text>
+    <text x="155" y="40" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██╗   ██╗███████╗ ███▓▓▒╗░░██████╗ ██████╗ ██████╗ </text>
+    <text x="155" y="60" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██║   ██║██╔════╝██╔════╝╚══██╔══╝██╔═══██╗██╔══██╗</text>
+    <text x="155" y="80" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██║   ██║█████╗  ██║        ██║   ██║   ██║██████╔╝</text>
+    <text x="155" y="100" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">╚██╗ ██╔╝██╔══╝  ██║        ██║   ██║   ██║██╔══██╗</text>
+    <text x="155" y="120" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;"> ╚████╔╝ ███████╗╚███▓▓▒╗   ██║   ╚██████╔╝██║  ██║</text>
+    <text x="155" y="140" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">  ╚═══╝  ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝</text>
   </g>
   <g class="frame f29">
-    <text x="155" y="40" class="txt glitch">██╗   ██╗███████╗ ██████╗▓▒▒░░███╗ ██████╗ ██████╗ </text>
-    <text x="155" y="60" class="txt glitch">██║   ██║██╔════╝██╔════╝╚══░░╔══╝██╔═══██╗██╔══██╗</text>
-    <text x="155" y="80" class="txt glitch">██║   ██║█████╗  ██║        ░░║   ██║   ██║██████╔╝</text>
-    <text x="155" y="100" class="txt glitch">╚██╗ ██╔╝██╔══╝  ██║        ░░║   ██║   ██║██╔══██╗</text>
-    <text x="155" y="120" class="txt glitch"> ╚████╔╝ ███████╗╚██████╗   ░░║   ╚██████╔╝██║  ██║</text>
-    <text x="155" y="140" class="txt glitch">  ╚═══╝  ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝</text>
+    <text x="155" y="40" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██╗   ██╗███████╗ ████▓▓╗▒░░█████╗ ██████╗ ██████╗ </text>
+    <text x="155" y="60" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██║   ██║██╔════╝██╔════╝╚══██╔══╝██╔═══██╗██╔══██╗</text>
+    <text x="155" y="80" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██║   ██║█████╗  ██║        ██║   ██║   ██║██████╔╝</text>
+    <text x="155" y="100" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">╚██╗ ██╔╝██╔══╝  ██║        ██║   ██║   ██║██╔══██╗</text>
+    <text x="155" y="120" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;"> ╚████╔╝ ███████╗╚████▓▓╗   ██║   ╚██████╔╝██║  ██║</text>
+    <text x="155" y="140" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">  ╚═══╝  ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝</text>
   </g>
   <g class="frame f30">
-    <text x="155" y="40" class="txt glitch">██╗   ██╗███████╗ ██████╗▓▓▒▒░░██╗ ██████╗ ██████╗ </text>
-    <text x="155" y="60" class="txt glitch">██║   ██║██╔════╝██╔════╝╚══▒░╔══╝██╔═══██╗██╔══██╗</text>
-    <text x="155" y="80" class="txt glitch">██║   ██║█████╗  ██║        ▒░║   ██║   ██║██████╔╝</text>
-    <text x="155" y="100" class="txt glitch">╚██╗ ██╔╝██╔══╝  ██║        ▒░║   ██║   ██║██╔══██╗</text>
-    <text x="155" y="120" class="txt glitch"> ╚████╔╝ ███████╗╚██████╗   ▒░║   ╚██████╔╝██║  ██║</text>
-    <text x="155" y="140" class="txt glitch">  ╚═══╝  ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝</text>
+    <text x="155" y="40" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██╗   ██╗███████╗ █████▓╗▒▒░░████╗ ██████╗ ██████╗ </text>
+    <text x="155" y="60" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██║   ██║██╔════╝██╔════╝╚══░█╔══╝██╔═══██╗██╔══██╗</text>
+    <text x="155" y="80" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██║   ██║█████╗  ██║        ░█║   ██║   ██║██████╔╝</text>
+    <text x="155" y="100" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">╚██╗ ██╔╝██╔══╝  ██║        ░█║   ██║   ██║██╔══██╗</text>
+    <text x="155" y="120" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;"> ╚████╔╝ ███████╗╚█████▓╗   ░█║   ╚██████╔╝██║  ██║</text>
+    <text x="155" y="140" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">  ╚═══╝  ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝</text>
   </g>
   <g class="frame f31">
-    <text x="155" y="40" class="txt glitch">██╗   ██╗███████╗ ██████╗█▓▓▒▒░░█╗ ██████╗ ██████╗ </text>
-    <text x="155" y="60" class="txt glitch">██║   ██║██╔════╝██╔════╝╚══▒▒╔══╝██╔═══██╗██╔══██╗</text>
-    <text x="155" y="80" class="txt glitch">██║   ██║█████╗  ██║        ▒▒║   ██║   ██║██████╔╝</text>
-    <text x="155" y="100" class="txt glitch">╚██╗ ██╔╝██╔══╝  ██║        ▒▒║   ██║   ██║██╔══██╗</text>
-    <text x="155" y="120" class="txt glitch"> ╚████╔╝ ███████╗╚██████╗   ▒▒║   ╚██████╔╝██║  ██║</text>
-    <text x="155" y="140" class="txt glitch">  ╚═══╝  ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝</text>
+    <text x="155" y="40" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██╗   ██╗███████╗ ██████╗▓▒▒░░███╗ ██████╗ ██████╗ </text>
+    <text x="155" y="60" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██║   ██║██╔════╝██╔════╝╚══░░╔══╝██╔═══██╗██╔══██╗</text>
+    <text x="155" y="80" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██║   ██║█████╗  ██║        ░░║   ██║   ██║██████╔╝</text>
+    <text x="155" y="100" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">╚██╗ ██╔╝██╔══╝  ██║        ░░║   ██║   ██║██╔══██╗</text>
+    <text x="155" y="120" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;"> ╚████╔╝ ███████╗╚██████╗   ░░║   ╚██████╔╝██║  ██║</text>
+    <text x="155" y="140" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">  ╚═══╝  ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝</text>
   </g>
   <g class="frame f32">
-    <text x="155" y="40" class="txt glitch">██╗   ██╗███████╗ ██████╗██▓▓▒▒░░╗ ██████╗ ██████╗ </text>
-    <text x="155" y="60" class="txt glitch">██║   ██║██╔════╝██╔════╝╚══▓▒╔══╝██╔═══██╗██╔══██╗</text>
-    <text x="155" y="80" class="txt glitch">██║   ██║█████╗  ██║        ▓▒║   ██║   ██║██████╔╝</text>
-    <text x="155" y="100" class="txt glitch">╚██╗ ██╔╝██╔══╝  ██║        ▓▒║   ██║   ██║██╔══██╗</text>
-    <text x="155" y="120" class="txt glitch"> ╚████╔╝ ███████╗╚██████╗   ▓▒║   ╚██████╔╝██║  ██║</text>
-    <text x="155" y="140" class="txt glitch">  ╚═══╝  ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝</text>
+    <text x="155" y="40" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██╗   ██╗███████╗ ██████╗▓▓▒▒░░██╗ ██████╗ ██████╗ </text>
+    <text x="155" y="60" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██║   ██║██╔════╝██╔════╝╚══▒░╔══╝██╔═══██╗██╔══██╗</text>
+    <text x="155" y="80" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██║   ██║█████╗  ██║        ▒░║   ██║   ██║██████╔╝</text>
+    <text x="155" y="100" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">╚██╗ ██╔╝██╔══╝  ██║        ▒░║   ██║   ██║██╔══██╗</text>
+    <text x="155" y="120" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;"> ╚████╔╝ ███████╗╚██████╗   ▒░║   ╚██████╔╝██║  ██║</text>
+    <text x="155" y="140" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">  ╚═══╝  ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝</text>
   </g>
   <g class="frame f33">
-    <text x="155" y="40" class="txt glitch">██╗   ██╗███████╗ ██████╗███▓▓▒▒░╗ ██████╗ ██████╗ </text>
-    <text x="155" y="60" class="txt glitch">██║   ██║██╔════╝██╔════╝╚══▓▓╔══╝██╔═══██╗██╔══██╗</text>
-    <text x="155" y="80" class="txt glitch">██║   ██║█████╗  ██║        ▓▓║   ██║   ██║██████╔╝</text>
-    <text x="155" y="100" class="txt glitch">╚██╗ ██╔╝██╔══╝  ██║        ▓▓║   ██║   ██║██╔══██╗</text>
-    <text x="155" y="120" class="txt glitch"> ╚████╔╝ ███████╗╚██████╗   ▓▓║   ╚██████╔╝██║  ██║</text>
-    <text x="155" y="140" class="txt glitch">  ╚═══╝  ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝</text>
+    <text x="155" y="40" style="font-family:'Courier New',monospace;font-size:16px;fill:#ff003c;white-space:pre;font-weight:bold;">██╗   ██╗█▒█████╗ ██▓███╗▓▓▒▒░░ █╗ ░█████╗ ██████╗ </text>
+    <text x="155" y="60" style="font-family:'Courier New',monospace;font-size:16px;fill:#ff003c;white-space:pre;font-weight:bold;">██║   ██║▒█╔════╝██╔════╝╚══▒░╔══╝██╔═══█▓╗██╔══██╗</text>
+    <text x="155" y="80" style="font-family:'Courier New',monospace;font-size:16px;fill:#ff003c;white-space:pre;font-weight:bold;">██║   ██║█████╗  ██║        ▒░║   ██║   ██║██████╔╝</text>
+    <text x="155" y="100" style="font-family:'Courier New',monospace;font-size:16px;fill:#ff003c;white-space:pre;font-weight:bold;">╚██╗ ██╔╝██╔══╝  ██║        ▒░║   ██║   ██║██╔══██╗</text>
+    <text x="155" y="120" style="font-family:'Courier New',monospace;font-size:16px;fill:#ff003c;white-space:pre;font-weight:bold;"> ╚███▒╔╝ ███████╗╚███░██╗   ▒▒║   ╚██████╔╝█▒║  ██║</text>
+    <text x="155" y="140" style="font-family:'Courier New',monospace;font-size:16px;fill:#ff003c;white-space:pre;font-weight:bold;">  ╚═══╝  ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝</text>
   </g>
   <g class="frame f34">
-    <text x="155" y="40" class="txt glitch">██╗   ██╗███████╗ ██████╗████▓▓▒▒╗ ██████╗ ██████╗ </text>
-    <text x="155" y="60" class="txt glitch">██║   ██║██╔════╝██╔════╝╚══█▓╔══╝░█╔═══██╗██╔══██╗</text>
-    <text x="155" y="80" class="txt glitch">██║   ██║█████╗  ██║        █▓║   ░█║   ██║██████╔╝</text>
-    <text x="155" y="100" class="txt glitch">╚██╗ ██╔╝██╔══╝  ██║        █▓║   ░█║   ██║██╔══██╗</text>
-    <text x="155" y="120" class="txt glitch"> ╚████╔╝ ███████╗╚██████╗   █▓║   ╚██████╔╝██║  ██║</text>
-    <text x="155" y="140" class="txt glitch">  ╚═══╝  ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝</text>
+    <text x="155" y="40" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██╗   ██╗███████╗ ██████╗█▓▓▒▒░░█╗ ██████╗ ██████╗ </text>
+    <text x="155" y="60" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██║   ██║██╔════╝██╔════╝╚══▒▒╔══╝██╔═══██╗██╔══██╗</text>
+    <text x="155" y="80" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██║   ██║█████╗  ██║        ▒▒║   ██║   ██║██████╔╝</text>
+    <text x="155" y="100" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">╚██╗ ██╔╝██╔══╝  ██║        ▒▒║   ██║   ██║██╔══██╗</text>
+    <text x="155" y="120" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;"> ╚████╔╝ ███████╗╚██████╗   ▒▒║   ╚██████╔╝██║  ██║</text>
+    <text x="155" y="140" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">  ╚═══╝  ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝</text>
   </g>
   <g class="frame f35">
-    <text x="155" y="40" class="txt glitch">██╗   ██╗███████╗ ██████╗█████▓▓▒╗ ░█████╗ ██████╗ </text>
-    <text x="155" y="60" class="txt glitch">██║   ██║██╔════╝██╔════╝╚══██╔══╝░░╔═══██╗██╔══██╗</text>
-    <text x="155" y="80" class="txt glitch">██║   ██║█████╗  ██║        ██║   ░░║   ██║██████╔╝</text>
-    <text x="155" y="100" class="txt glitch">╚██╗ ██╔╝██╔══╝  ██║        ██║   ░░║   ██║██╔══██╗</text>
-    <text x="155" y="120" class="txt glitch"> ╚████╔╝ ███████╗╚██████╗   ██║   ╚░█████╔╝██║  ██║</text>
-    <text x="155" y="140" class="txt glitch">  ╚═══╝  ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝</text>
+    <text x="155" y="40" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██╗   ██╗███████╗ ██████╗██▓▓▒▒░░╗ ██████╗ ██████╗ </text>
+    <text x="155" y="60" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██║   ██║██╔════╝██╔════╝╚══▓▒╔══╝██╔═══██╗██╔══██╗</text>
+    <text x="155" y="80" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██║   ██║█████╗  ██║        ▓▒║   ██║   ██║██████╔╝</text>
+    <text x="155" y="100" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">╚██╗ ██╔╝██╔══╝  ██║        ▓▒║   ██║   ██║██╔══██╗</text>
+    <text x="155" y="120" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;"> ╚████╔╝ ███████╗╚██████╗   ▓▒║   ╚██████╔╝██║  ██║</text>
+    <text x="155" y="140" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">  ╚═══╝  ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝</text>
   </g>
   <g class="frame f36">
-    <text x="155" y="40" class="txt glitch">██╗   ██╗███████╗ ██████╗██████▓▓╗ ░░████╗ ██████╗ </text>
-    <text x="155" y="60" class="txt glitch">██║   ██║██╔════╝██╔════╝╚══██╔══╝▒░╔═══██╗██╔══██╗</text>
-    <text x="155" y="80" class="txt glitch">██║   ██║█████╗  ██║        ██║   ▒░║   ██║██████╔╝</text>
-    <text x="155" y="100" class="txt glitch">╚██╗ ██╔╝██╔══╝  ██║        ██║   ▒░║   ██║██╔══██╗</text>
-    <text x="155" y="120" class="txt glitch"> ╚████╔╝ ███████╗╚██████╗   ██║   ╚░░████╔╝██║  ██║</text>
-    <text x="155" y="140" class="txt glitch">  ╚═══╝  ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝</text>
+    <text x="155" y="40" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██╗   ██╗███████╗ ██████╗███▓▓▒▒░╗ ██████╗ ██████╗ </text>
+    <text x="155" y="60" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██║   ██║██╔════╝██╔════╝╚══▓▓╔══╝██╔═══██╗██╔══██╗</text>
+    <text x="155" y="80" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██║   ██║█████╗  ██║        ▓▓║   ██║   ██║██████╔╝</text>
+    <text x="155" y="100" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">╚██╗ ██╔╝██╔══╝  ██║        ▓▓║   ██║   ██║██╔══██╗</text>
+    <text x="155" y="120" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;"> ╚████╔╝ ███████╗╚██████╗   ▓▓║   ╚██████╔╝██║  ██║</text>
+    <text x="155" y="140" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">  ╚═══╝  ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝</text>
   </g>
   <g class="frame f37">
-    <text x="155" y="40" class="txt glitch">██╗   ██╗███████╗ ██████╗███████▓╗ ▒░░███╗ ██████╗ </text>
-    <text x="155" y="60" class="txt glitch">██║   ██║██╔════╝██╔════╝╚══██╔══╝▒▒╔═══██╗██╔══██╗</text>
-    <text x="155" y="80" class="txt glitch">██║   ██║█████╗  ██║        ██║   ▒▒║   ██║██████╔╝</text>
-    <text x="155" y="100" class="txt glitch">╚██╗ ██╔╝██╔══╝  ██║        ██║   ▒▒║   ██║██╔══██╗</text>
-    <text x="155" y="120" class="txt glitch"> ╚████╔╝ ███████╗╚██████╗   ██║   ╚▒░░███╔╝██║  ██║</text>
-    <text x="155" y="140" class="txt glitch">  ╚═══╝  ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝</text>
+    <text x="155" y="40" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██╗   ██╗███████╗ ██████╗████▓▓▒▒╗ ██████╗ ██████╗ </text>
+    <text x="155" y="60" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██║   ██║██╔════╝██╔════╝╚══█▓╔══╝░█╔═══██╗██╔══██╗</text>
+    <text x="155" y="80" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██║   ██║█████╗  ██║        █▓║   ░█║   ██║██████╔╝</text>
+    <text x="155" y="100" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">╚██╗ ██╔╝██╔══╝  ██║        █▓║   ░█║   ██║██╔══██╗</text>
+    <text x="155" y="120" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;"> ╚████╔╝ ███████╗╚██████╗   █▓║   ╚██████╔╝██║  ██║</text>
+    <text x="155" y="140" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">  ╚═══╝  ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝</text>
   </g>
   <g class="frame f38">
-    <text x="155" y="40" class="txt glitch">██╗   ██╗███████╗ ██████╗████████╗ ▒▒░░██╗ ██████╗ </text>
-    <text x="155" y="60" class="txt glitch">██║   ██║██╔════╝██╔════╝╚══██╔══╝▓▒╔═══██╗██╔══██╗</text>
-    <text x="155" y="80" class="txt glitch">██║   ██║█████╗  ██║        ██║   ▓▒║   ██║██████╔╝</text>
-    <text x="155" y="100" class="txt glitch">╚██╗ ██╔╝██╔══╝  ██║        ██║   ▓▒║   ██║██╔══██╗</text>
-    <text x="155" y="120" class="txt glitch"> ╚████╔╝ ███████╗╚██████╗   ██║   ╚▒▒░░██╔╝██║  ██║</text>
-    <text x="155" y="140" class="txt glitch">  ╚═══╝  ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝</text>
+    <text x="155" y="40" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██╗   ██╗███████╗ ██████╗█████▓▓▒╗ ░█████╗ ██████╗ </text>
+    <text x="155" y="60" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██║   ██║██╔════╝██╔════╝╚══██╔══╝░░╔═══██╗██╔══██╗</text>
+    <text x="155" y="80" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██║   ██║█████╗  ██║        ██║   ░░║   ██║██████╔╝</text>
+    <text x="155" y="100" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">╚██╗ ██╔╝██╔══╝  ██║        ██║   ░░║   ██║██╔══██╗</text>
+    <text x="155" y="120" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;"> ╚████╔╝ ███████╗╚██████╗   ██║   ╚░█████╔╝██║  ██║</text>
+    <text x="155" y="140" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">  ╚═══╝  ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝</text>
   </g>
   <g class="frame f39">
-    <text x="155" y="40" class="txt glitch">██╗   ██╗███████╗ ██████╗████████╗ ▓▒▒░░█╗ ██████╗ </text>
-    <text x="155" y="60" class="txt glitch">██║   ██║██╔════╝██╔════╝╚══██╔══╝▓▓╔═══██╗██╔══██╗</text>
-    <text x="155" y="80" class="txt glitch">██║   ██║█████╗  ██║        ██║   ▓▓║   ██║██████╔╝</text>
-    <text x="155" y="100" class="txt glitch">╚██╗ ██╔╝██╔══╝  ██║        ██║   ▓▓║   ██║██╔══██╗</text>
-    <text x="155" y="120" class="txt glitch"> ╚████╔╝ ███████╗╚██████╗   ██║   ╚▓▒▒░░█╔╝██║  ██║</text>
-    <text x="155" y="140" class="txt glitch">  ╚═══╝  ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝</text>
+    <text x="155" y="40" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██╗   ██╗███████╗ ██████╗██████▓▓╗ ░░████╗ ██████╗ </text>
+    <text x="155" y="60" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██║   ██║██╔════╝██╔════╝╚══██╔══╝▒░╔═══██╗██╔══██╗</text>
+    <text x="155" y="80" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██║   ██║█████╗  ██║        ██║   ▒░║   ██║██████╔╝</text>
+    <text x="155" y="100" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">╚██╗ ██╔╝██╔══╝  ██║        ██║   ▒░║   ██║██╔══██╗</text>
+    <text x="155" y="120" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;"> ╚████╔╝ ███████╗╚██████╗   ██║   ╚░░████╔╝██║  ██║</text>
+    <text x="155" y="140" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">  ╚═══╝  ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝</text>
   </g>
   <g class="frame f40">
-    <text x="155" y="40" class="txt glitch">██╗   ██╗███████╗ ██████╗████████╗ ▓▓▒▒░░╗ ██████╗ </text>
-    <text x="155" y="60" class="txt glitch">██║   ██║██╔════╝██╔════╝╚══██╔══╝█▓╔═══░█╗██╔══██╗</text>
-    <text x="155" y="80" class="txt glitch">██║   ██║█████╗  ██║        ██║   █▓║   ░█║██████╔╝</text>
-    <text x="155" y="100" class="txt glitch">╚██╗ ██╔╝██╔══╝  ██║        ██║   █▓║   ░█║██╔══██╗</text>
-    <text x="155" y="120" class="txt glitch"> ╚████╔╝ ███████╗╚██████╗   ██║   ╚▓▓▒▒░░╔╝██║  ██║</text>
-    <text x="155" y="140" class="txt glitch">  ╚═══╝  ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝</text>
+    <text x="155" y="40" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██╗   ██╗███████╗ ██████╗███████▓╗ ▒░░███╗ ██████╗ </text>
+    <text x="155" y="60" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██║   ██║██╔════╝██╔════╝╚══██╔══╝▒▒╔═══██╗██╔══██╗</text>
+    <text x="155" y="80" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██║   ██║█████╗  ██║        ██║   ▒▒║   ██║██████╔╝</text>
+    <text x="155" y="100" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">╚██╗ ██╔╝██╔══╝  ██║        ██║   ▒▒║   ██║██╔══██╗</text>
+    <text x="155" y="120" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;"> ╚████╔╝ ███████╗╚██████╗   ██║   ╚▒░░███╔╝██║  ██║</text>
+    <text x="155" y="140" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">  ╚═══╝  ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝</text>
   </g>
   <g class="frame f41">
-    <text x="155" y="40" class="txt glitch">██╗   ██╗███████╗ ██████╗████████╗ █▓▓▒▒░╗ ██████╗ </text>
-    <text x="155" y="60" class="txt glitch">██║   ██║██╔════╝██╔════╝╚══██╔══╝██╔═══░░╗██╔══██╗</text>
-    <text x="155" y="80" class="txt glitch">██║   ██║█████╗  ██║        ██║   ██║   ░░║██████╔╝</text>
-    <text x="155" y="100" class="txt glitch">╚██╗ ██╔╝██╔══╝  ██║        ██║   ██║   ░░║██╔══██╗</text>
-    <text x="155" y="120" class="txt glitch"> ╚████╔╝ ███████╗╚██████╗   ██║   ╚█▓▓▒▒░╔╝██║  ██║</text>
-    <text x="155" y="140" class="txt glitch">  ╚═══╝  ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝</text>
+    <text x="155" y="40" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██╗   ██╗███████╗ ██████╗████████╗ ▒▒░░██╗ ██████╗ </text>
+    <text x="155" y="60" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██║   ██║██╔════╝██╔════╝╚══██╔══╝▓▒╔═══██╗██╔══██╗</text>
+    <text x="155" y="80" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██║   ██║█████╗  ██║        ██║   ▓▒║   ██║██████╔╝</text>
+    <text x="155" y="100" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">╚██╗ ██╔╝██╔══╝  ██║        ██║   ▓▒║   ██║██╔══██╗</text>
+    <text x="155" y="120" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;"> ╚████╔╝ ███████╗╚██████╗   ██║   ╚▒▒░░██╔╝██║  ██║</text>
+    <text x="155" y="140" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">  ╚═══╝  ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝</text>
   </g>
   <g class="frame f42">
-    <text x="155" y="40" class="txt glitch">██╗   ██╗███████╗ ██████╗████████╗ ██▓▓▒▒╗ ██████╗ </text>
-    <text x="155" y="60" class="txt glitch">██║   ██║██╔════╝██╔════╝╚══██╔══╝██╔═══▒░╗██╔══██╗</text>
-    <text x="155" y="80" class="txt glitch">██║   ██║█████╗  ██║        ██║   ██║   ▒░║██████╔╝</text>
-    <text x="155" y="100" class="txt glitch">╚██╗ ██╔╝██╔══╝  ██║        ██║   ██║   ▒░║██╔══██╗</text>
-    <text x="155" y="120" class="txt glitch"> ╚████╔╝ ███████╗╚██████╗   ██║   ╚██▓▓▒▒╔╝██║  ██║</text>
-    <text x="155" y="140" class="txt glitch">  ╚═══╝  ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝</text>
+    <text x="155" y="40" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██╗   ██╗███████╗ ██████╗████████╗ ▓▒▒░░█╗ ██████╗ </text>
+    <text x="155" y="60" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██║   ██║██╔════╝██╔════╝╚══██╔══╝▓▓╔═══██╗██╔══██╗</text>
+    <text x="155" y="80" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██║   ██║█████╗  ██║        ██║   ▓▓║   ██║██████╔╝</text>
+    <text x="155" y="100" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">╚██╗ ██╔╝██╔══╝  ██║        ██║   ▓▓║   ██║██╔══██╗</text>
+    <text x="155" y="120" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;"> ╚████╔╝ ███████╗╚██████╗   ██║   ╚▓▒▒░░█╔╝██║  ██║</text>
+    <text x="155" y="140" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">  ╚═══╝  ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝</text>
   </g>
   <g class="frame f43">
-    <text x="155" y="40" class="txt glitch">██╗   ██╗███████╗ ██████╗████████╗ ███▓▓▒╗ ░█████╗ </text>
-    <text x="155" y="60" class="txt glitch">██║   ██║██╔════╝██╔════╝╚══██╔══╝██╔═══▒▒╗░█╔══██╗</text>
-    <text x="155" y="80" class="txt glitch">██║   ██║█████╗  ██║        ██║   ██║   ▒▒║░█████╔╝</text>
-    <text x="155" y="100" class="txt glitch">╚██╗ ██╔╝██╔══╝  ██║        ██║   ██║   ▒▒║░█╔══██╗</text>
-    <text x="155" y="120" class="txt glitch"> ╚████╔╝ ███████╗╚██████╗   ██║   ╚███▓▓▒╔╝░█║  ██║</text>
-    <text x="155" y="140" class="txt glitch">  ╚═══╝  ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝</text>
+    <text x="155" y="40" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██╗   ██╗███████╗ ██████╗████████╗ ▓▓▒▒░░╗ ██████╗ </text>
+    <text x="155" y="60" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██║   ██║██╔════╝██╔════╝╚══██╔══╝█▓╔═══░█╗██╔══██╗</text>
+    <text x="155" y="80" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██║   ██║█████╗  ██║        ██║   █▓║   ░█║██████╔╝</text>
+    <text x="155" y="100" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">╚██╗ ██╔╝██╔══╝  ██║        ██║   █▓║   ░█║██╔══██╗</text>
+    <text x="155" y="120" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;"> ╚████╔╝ ███████╗╚██████╗   ██║   ╚▓▓▒▒░░╔╝██║  ██║</text>
+    <text x="155" y="140" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">  ╚═══╝  ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝</text>
   </g>
   <g class="frame f44">
-    <text x="155" y="40" class="txt glitch">██╗   ██╗███████╗ ██████╗████████╗ ████▓▓╗ ░░████╗ </text>
-    <text x="155" y="60" class="txt glitch">██║   ██║██╔════╝██╔════╝╚══██╔══╝██╔═══▓▒╗░░╔══██╗</text>
-    <text x="155" y="80" class="txt glitch">██║   ██║█████╗  ██║        ██║   ██║   ▓▒║░░████╔╝</text>
-    <text x="155" y="100" class="txt glitch">╚██╗ ██╔╝██╔══╝  ██║        ██║   ██║   ▓▒║░░╔══██╗</text>
-    <text x="155" y="120" class="txt glitch"> ╚████╔╝ ███████╗╚██████╗   ██║   ╚████▓▓╔╝░░║  ██║</text>
-    <text x="155" y="140" class="txt glitch">  ╚═══╝  ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝</text>
+    <text x="155" y="40" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██╗   ██╗███████╗ ██████╗████████╗ █▓▓▒▒░╗ ██████╗ </text>
+    <text x="155" y="60" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██║   ██║██╔════╝██╔════╝╚══██╔══╝██╔═══░░╗██╔══██╗</text>
+    <text x="155" y="80" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██║   ██║█████╗  ██║        ██║   ██║   ░░║██████╔╝</text>
+    <text x="155" y="100" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">╚██╗ ██╔╝██╔══╝  ██║        ██║   ██║   ░░║██╔══██╗</text>
+    <text x="155" y="120" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;"> ╚████╔╝ ███████╗╚██████╗   ██║   ╚█▓▓▒▒░╔╝██║  ██║</text>
+    <text x="155" y="140" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">  ╚═══╝  ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝</text>
   </g>
   <g class="frame f45">
-    <text x="155" y="40" class="txt glitch">██╗   ██╗███████╗ ██████╗████████╗ █████▓╗ ▒░░███╗ </text>
-    <text x="155" y="60" class="txt glitch">██║   ██║██╔════╝██╔════╝╚══██╔══╝██╔═══▓▓╗▒░╔══██╗</text>
-    <text x="155" y="80" class="txt glitch">██║   ██║█████╗  ██║        ██║   ██║   ▓▓║▒░░███╔╝</text>
-    <text x="155" y="100" class="txt glitch">╚██╗ ██╔╝██╔══╝  ██║        ██║   ██║   ▓▓║▒░╔══██╗</text>
-    <text x="155" y="120" class="txt glitch"> ╚████╔╝ ███████╗╚██████╗   ██║   ╚█████▓╔╝▒░║  ██║</text>
-    <text x="155" y="140" class="txt glitch">  ╚═══╝  ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝</text>
+    <text x="155" y="40" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██╗   ██╗███████╗ ██████╗████████╗ ██▓▓▒▒╗ ██████╗ </text>
+    <text x="155" y="60" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██║   ██║██╔════╝██╔════╝╚══██╔══╝██╔═══▒░╗██╔══██╗</text>
+    <text x="155" y="80" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██║   ██║█████╗  ██║        ██║   ██║   ▒░║██████╔╝</text>
+    <text x="155" y="100" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">╚██╗ ██╔╝██╔══╝  ██║        ██║   ██║   ▒░║██╔══██╗</text>
+    <text x="155" y="120" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;"> ╚████╔╝ ███████╗╚██████╗   ██║   ╚██▓▓▒▒╔╝██║  ██║</text>
+    <text x="155" y="140" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">  ╚═══╝  ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝</text>
   </g>
   <g class="frame f46">
-    <text x="155" y="40" class="txt glitch">██╗   ██╗███████╗ ██████╗████████╗ ██████╗ ▒▒░░██╗ </text>
-    <text x="155" y="60" class="txt glitch">██║   ██║██╔════╝██╔════╝╚══██╔══╝██╔═══█▓╗▒▒╔══██╗</text>
-    <text x="155" y="80" class="txt glitch">██║   ██║█████╗  ██║        ██║   ██║   █▓║▒▒░░██╔╝</text>
-    <text x="155" y="100" class="txt glitch">╚██╗ ██╔╝██╔══╝  ██║        ██║   ██║   █▓║▒▒╔══██╗</text>
-    <text x="155" y="120" class="txt glitch"> ╚████╔╝ ███████╗╚██████╗   ██║   ╚██████╔╝▒▒║  ██║</text>
-    <text x="155" y="140" class="txt glitch">  ╚═══╝  ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝</text>
+    <text x="155" y="40" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██╗   ██╗███████╗ ██████╗████████╗ ███▓▓▒╗ ░█████╗ </text>
+    <text x="155" y="60" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██║   ██║██╔════╝██╔════╝╚══██╔══╝██╔═══▒▒╗░█╔══██╗</text>
+    <text x="155" y="80" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██║   ██║█████╗  ██║        ██║   ██║   ▒▒║░█████╔╝</text>
+    <text x="155" y="100" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">╚██╗ ██╔╝██╔══╝  ██║        ██║   ██║   ▒▒║░█╔══██╗</text>
+    <text x="155" y="120" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;"> ╚████╔╝ ███████╗╚██████╗   ██║   ╚███▓▓▒╔╝░█║  ██║</text>
+    <text x="155" y="140" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">  ╚═══╝  ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝</text>
   </g>
   <g class="frame f47">
-    <text x="155" y="40" class="txt glitch">██╗   ██╗███████╗ ██████╗████████╗ ██████╗ ▓▒▒░░█╗ </text>
-    <text x="155" y="60" class="txt glitch">██║   ██║██╔════╝██╔════╝╚══██╔══╝██╔═══██╗▓▒╔══██╗</text>
-    <text x="155" y="80" class="txt glitch">██║   ██║█████╗  ██║        ██║   ██║   ██║▓▒▒░░█╔╝</text>
-    <text x="155" y="100" class="txt glitch">╚██╗ ██╔╝██╔══╝  ██║        ██║   ██║   ██║▓▒╔══██╗</text>
-    <text x="155" y="120" class="txt glitch"> ╚████╔╝ ███████╗╚██████╗   ██║   ╚██████╔╝▓▒║  ██║</text>
-    <text x="155" y="140" class="txt glitch">  ╚═══╝  ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝</text>
+    <text x="155" y="40" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██╗   ██╗███████╗ ██████╗████████╗ ████▓▓╗ ░░████╗ </text>
+    <text x="155" y="60" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██║   ██║██╔════╝██╔════╝╚══██╔══╝██╔═══▓▒╗░░╔══██╗</text>
+    <text x="155" y="80" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██║   ██║█████╗  ██║        ██║   ██║   ▓▒║░░████╔╝</text>
+    <text x="155" y="100" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">╚██╗ ██╔╝██╔══╝  ██║        ██║   ██║   ▓▒║░░╔══██╗</text>
+    <text x="155" y="120" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;"> ╚████╔╝ ███████╗╚██████╗   ██║   ╚████▓▓╔╝░░║  ██║</text>
+    <text x="155" y="140" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">  ╚═══╝  ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝</text>
   </g>
   <g class="frame f48">
-    <text x="155" y="40" class="txt glitch">██╗   ██╗███████╗ ██████╗████████╗ ██████╗ ▓▓▒▒░░╗ </text>
-    <text x="155" y="60" class="txt glitch">██║   ██║██╔════╝██╔════╝╚══██╔══╝██╔═══██╗▓▓╔══░█╗</text>
-    <text x="155" y="80" class="txt glitch">██║   ██║█████╗  ██║        ██║   ██║   ██║▓▓▒▒░░╔╝</text>
-    <text x="155" y="100" class="txt glitch">╚██╗ ██╔╝██╔══╝  ██║        ██║   ██║   ██║▓▓╔══░█╗</text>
-    <text x="155" y="120" class="txt glitch"> ╚████╔╝ ███████╗╚██████╗   ██║   ╚██████╔╝▓▓║  ░█║</text>
-    <text x="155" y="140" class="txt glitch">  ╚═══╝  ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝</text>
+    <text x="155" y="40" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██╗   ██╗███████╗ ██████╗████████╗ █████▓╗ ▒░░███╗ </text>
+    <text x="155" y="60" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██║   ██║██╔════╝██╔════╝╚══██╔══╝██╔═══▓▓╗▒░╔══██╗</text>
+    <text x="155" y="80" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██║   ██║█████╗  ██║        ██║   ██║   ▓▓║▒░░███╔╝</text>
+    <text x="155" y="100" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">╚██╗ ██╔╝██╔══╝  ██║        ██║   ██║   ▓▓║▒░╔══██╗</text>
+    <text x="155" y="120" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;"> ╚████╔╝ ███████╗╚██████╗   ██║   ╚█████▓╔╝▒░║  ██║</text>
+    <text x="155" y="140" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">  ╚═══╝  ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝</text>
   </g>
   <g class="frame f49">
-    <text x="155" y="40" class="txt glitch">██╗   ██╗███████╗ ██████╗████████╗ ██████╗ █▓▓▒▒░╗ </text>
-    <text x="155" y="60" class="txt glitch">██║   ██║██╔════╝██╔════╝╚══██╔══╝██╔═══██╗█▓╔══░░╗</text>
-    <text x="155" y="80" class="txt glitch">██║   ██║█████╗  ██║        ██║   ██║   ██║█▓▓▒▒░╔╝</text>
-    <text x="155" y="100" class="txt glitch">╚██╗ ██╔╝██╔══╝  ██║        ██║   ██║   ██║█▓╔══░░╗</text>
-    <text x="155" y="120" class="txt glitch"> ╚████╔╝ ███████╗╚██████╗   ██║   ╚██████╔╝█▓║  ░░║</text>
-    <text x="155" y="140" class="txt glitch">  ╚═══╝  ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝</text>
+    <text x="155" y="40" style="font-family:'Courier New',monospace;font-size:16px;fill:#ff003c;white-space:pre;font-weight:bold;">██╗   ██╗███████╗ ██░█▓█╗████████╗ █████▓╗ ▒░░███╗ </text>
+    <text x="155" y="60" style="font-family:'Courier New',monospace;font-size:16px;fill:#ff003c;white-space:pre;font-weight:bold;">██║   ██║██╔════╝██╔════╝╚══██╔══╝██╔═══▓▓╗▒░╔══██╗</text>
+    <text x="155" y="80" style="font-family:'Courier New',monospace;font-size:16px;fill:#ff003c;white-space:pre;font-weight:bold;">██║   █ ║█ ███╗   █║        ██║   ██║   ▓▓║▒░░███╔╝</text>
+    <text x="155" y="100" style="font-family:'Courier New',monospace;font-size:16px;fill:#ff003c;white-space:pre;font-weight:bold;">╚██╗ ██╔╝██╔══╝  ██║        ██║   ██║   ▓▒║▒░╔══██╗</text>
+    <text x="155" y="120" style="font-family:'Courier New',monospace;font-size:16px;fill:#ff003c;white-space:pre;font-weight:bold;"> ╚████╔╝ ███████╗╚██████╗   █░║   ╚█████▓╔╝▒▓║  ██║</text>
+    <text x="155" y="140" style="font-family:'Courier New',monospace;font-size:16px;fill:#ff003c;white-space:pre;font-weight:bold;">  ╚═══╝  ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝</text>
   </g>
   <g class="frame f50">
-    <text x="155" y="40" class="txt glitch">██╗   ██╗███████╗ ██████╗████████╗ ██████╗ ██▓▓▒▒╗ </text>
-    <text x="155" y="60" class="txt glitch">██║   ██║██╔════╝██╔════╝╚══██╔══╝██╔═══██╗██╔══▒░╗</text>
-    <text x="155" y="80" class="txt glitch">██║   ██║█████╗  ██║        ██║   ██║   ██║██▓▓▒▒╔╝</text>
-    <text x="155" y="100" class="txt glitch">╚██╗ ██╔╝██╔══╝  ██║        ██║   ██║   ██║██╔══▒░╗</text>
-    <text x="155" y="120" class="txt glitch"> ╚████╔╝ ███████╗╚██████╗   ██║   ╚██████╔╝██║  ▒░║</text>
-    <text x="155" y="140" class="txt glitch">  ╚═══╝  ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝</text>
+    <text x="155" y="40" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██╗   ██╗███████╗ ██████╗████████╗ ██████╗ ▒▒░░██╗ </text>
+    <text x="155" y="60" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██║   ██║██╔════╝██╔════╝╚══██╔══╝██╔═══█▓╗▒▒╔══██╗</text>
+    <text x="155" y="80" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██║   ██║█████╗  ██║        ██║   ██║   █▓║▒▒░░██╔╝</text>
+    <text x="155" y="100" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">╚██╗ ██╔╝██╔══╝  ██║        ██║   ██║   █▓║▒▒╔══██╗</text>
+    <text x="155" y="120" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;"> ╚████╔╝ ███████╗╚██████╗   ██║   ╚██████╔╝▒▒║  ██║</text>
+    <text x="155" y="140" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">  ╚═══╝  ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝</text>
   </g>
   <g class="frame f51">
-    <text x="155" y="40" class="txt glitch">██╗   ██╗███████╗ ██████╗████████╗ ██████╗ ███▓▓▒╗ </text>
-    <text x="155" y="60" class="txt glitch">██║   ██║██╔════╝██╔════╝╚══██╔══╝██╔═══██╗██╔══▒▒╗</text>
-    <text x="155" y="80" class="txt glitch">██║   ██║█████╗  ██║        ██║   ██║   ██║███▓▓▒╔╝</text>
-    <text x="155" y="100" class="txt glitch">╚██╗ ██╔╝██╔══╝  ██║        ██║   ██║   ██║██╔══▒▒╗</text>
-    <text x="155" y="120" class="txt glitch"> ╚████╔╝ ███████╗╚██████╗   ██║   ╚██████╔╝██║  ▒▒║</text>
-    <text x="155" y="140" class="txt glitch">  ╚═══╝  ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝</text>
+    <text x="155" y="40" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██╗   ██╗███████╗ ██████╗████████╗ ██████╗ ▓▒▒░░█╗ </text>
+    <text x="155" y="60" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██║   ██║██╔════╝██╔════╝╚══██╔══╝██╔═══██╗▓▒╔══██╗</text>
+    <text x="155" y="80" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██║   ██║█████╗  ██║        ██║   ██║   ██║▓▒▒░░█╔╝</text>
+    <text x="155" y="100" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">╚██╗ ██╔╝██╔══╝  ██║        ██║   ██║   ██║▓▒╔══██╗</text>
+    <text x="155" y="120" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;"> ╚████╔╝ ███████╗╚██████╗   ██║   ╚██████╔╝▓▒║  ██║</text>
+    <text x="155" y="140" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">  ╚═══╝  ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝</text>
   </g>
   <g class="frame f52">
-    <text x="155" y="40" class="txt glitch">██╗   ██╗███████╗ ██████╗████████╗ ██████╗ ████▓▓╗ </text>
-    <text x="155" y="60" class="txt glitch">██║   ██║██╔════╝██╔════╝╚══██╔══╝██╔═══██╗██╔══▓▒╗</text>
-    <text x="155" y="80" class="txt glitch">██║   ██║█████╗  ██║        ██║   ██║   ██║████▓▓╔╝</text>
-    <text x="155" y="100" class="txt glitch">╚██╗ ██╔╝██╔══╝  ██║        ██║   ██║   ██║██╔══▓▒╗</text>
-    <text x="155" y="120" class="txt glitch"> ╚████╔╝ ███████╗╚██████╗   ██║   ╚██████╔╝██║  ▓▒║</text>
-    <text x="155" y="140" class="txt glitch">  ╚═══╝  ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝</text>
+    <text x="155" y="40" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██╗   ██╗███████╗ ██████╗████████╗ ██████╗ ▓▓▒▒░░╗ </text>
+    <text x="155" y="60" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██║   ██║██╔════╝██╔════╝╚══██╔══╝██╔═══██╗▓▓╔══░█╗</text>
+    <text x="155" y="80" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██║   ██║█████╗  ██║        ██║   ██║   ██║▓▓▒▒░░╔╝</text>
+    <text x="155" y="100" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">╚██╗ ██╔╝██╔══╝  ██║        ██║   ██║   ██║▓▓╔══░█╗</text>
+    <text x="155" y="120" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;"> ╚████╔╝ ███████╗╚██████╗   ██║   ╚██████╔╝▓▓║  ░█║</text>
+    <text x="155" y="140" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">  ╚═══╝  ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝</text>
   </g>
   <g class="frame f53">
-    <text x="155" y="40" class="txt glitch">██╗   ██╗███████╗ ██████╗████████╗ ██████╗ █████▓╗ </text>
-    <text x="155" y="60" class="txt glitch">██║   ██║██╔════╝██╔════╝╚══██╔══╝██╔═══██╗██╔══▓▓╗</text>
-    <text x="155" y="80" class="txt glitch">██║   ██║█████╗  ██║        ██║   ██║   ██║█████▓╔╝</text>
-    <text x="155" y="100" class="txt glitch">╚██╗ ██╔╝██╔══╝  ██║        ██║   ██║   ██║██╔══▓▓╗</text>
-    <text x="155" y="120" class="txt glitch"> ╚████╔╝ ███████╗╚██████╗   ██║   ╚██████╔╝██║  ▓▓║</text>
-    <text x="155" y="140" class="txt glitch">  ╚═══╝  ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝</text>
+    <text x="155" y="40" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██╗   ██╗███████╗ ██████╗████████╗ ██████╗ █▓▓▒▒░╗ </text>
+    <text x="155" y="60" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██║   ██║██╔════╝██╔════╝╚══██╔══╝██╔═══██╗█▓╔══░░╗</text>
+    <text x="155" y="80" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██║   ██║█████╗  ██║        ██║   ██║   ██║█▓▓▒▒░╔╝</text>
+    <text x="155" y="100" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">╚██╗ ██╔╝██╔══╝  ██║        ██║   ██║   ██║█▓╔══░░╗</text>
+    <text x="155" y="120" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;"> ╚████╔╝ ███████╗╚██████╗   ██║   ╚██████╔╝█▓║  ░░║</text>
+    <text x="155" y="140" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">  ╚═══╝  ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝</text>
   </g>
   <g class="frame f54">
-    <text x="155" y="40" class="txt glitch">██╗   ██╗███████╗ ██████╗████████╗ ██████╗ ██████╗ </text>
-    <text x="155" y="60" class="txt glitch">██║   ██║██╔════╝██╔════╝╚══██╔══╝██╔═══██╗██╔══█▓╗</text>
-    <text x="155" y="80" class="txt glitch">██║   ██║█████╗  ██║        ██║   ██║   ██║██████╔╝</text>
-    <text x="155" y="100" class="txt glitch">╚██╗ ██╔╝██╔══╝  ██║        ██║   ██║   ██║██╔══█▓╗</text>
-    <text x="155" y="120" class="txt glitch"> ╚████╔╝ ███████╗╚██████╗   ██║   ╚██████╔╝██║  █▓║</text>
-    <text x="155" y="140" class="txt glitch">  ╚═══╝  ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝</text>
+    <text x="155" y="40" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██╗   ██╗███████╗ ██████╗████████╗ ██████╗ ██▓▓▒▒╗ </text>
+    <text x="155" y="60" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██║   ██║██╔════╝██╔════╝╚══██╔══╝██╔═══██╗██╔══▒░╗</text>
+    <text x="155" y="80" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██║   ██║█████╗  ██║        ██║   ██║   ██║██▓▓▒▒╔╝</text>
+    <text x="155" y="100" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">╚██╗ ██╔╝██╔══╝  ██║        ██║   ██║   ██║██╔══▒░╗</text>
+    <text x="155" y="120" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;"> ╚████╔╝ ███████╗╚██████╗   ██║   ╚██████╔╝██║  ▒░║</text>
+    <text x="155" y="140" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">  ╚═══╝  ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝</text>
   </g>
   <g class="frame f55">
-    <text x="155" y="40" class="txt glitch">██╗   ██╗███████╗ ██████╗████████╗ ██████╗ ██████╗ </text>
-    <text x="155" y="60" class="txt glitch">██║   ██║██╔════╝██╔════╝╚══██╔══╝██╔═══██╗██╔══██╗</text>
-    <text x="155" y="80" class="txt glitch">██║   ██║█████╗  ██║        ██║   ██║   ██║██████╔╝</text>
-    <text x="155" y="100" class="txt glitch">╚██╗ ██╔╝██╔══╝  ██║        ██║   ██║   ██║██╔══██╗</text>
-    <text x="155" y="120" class="txt glitch"> ╚████╔╝ ███████╗╚██████╗   ██║   ╚██████╔╝██║  ██║</text>
-    <text x="155" y="140" class="txt glitch">  ╚═══╝  ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝</text>
+    <text x="155" y="40" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██╗   ██╗███████╗ ██████╗████████╗ ██████╗ ███▓▓▒╗ </text>
+    <text x="155" y="60" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██║   ██║██╔════╝██╔════╝╚══██╔══╝██╔═══██╗██╔══▒▒╗</text>
+    <text x="155" y="80" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██║   ██║█████╗  ██║        ██║   ██║   ██║███▓▓▒╔╝</text>
+    <text x="155" y="100" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">╚██╗ ██╔╝██╔══╝  ██║        ██║   ██║   ██║██╔══▒▒╗</text>
+    <text x="155" y="120" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;"> ╚████╔╝ ███████╗╚██████╗   ██║   ╚██████╔╝██║  ▒▒║</text>
+    <text x="155" y="140" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">  ╚═══╝  ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝</text>
   </g>
   <g class="frame f56">
-    <text x="155" y="40" class="txt glitch">██╗   ██╗███████╗ ██████╗████████╗ ██████╗ ██████╗ </text>
-    <text x="155" y="60" class="txt glitch">██║   ██║██╔════╝██╔════╝╚══██╔══╝██╔═══██╗██╔══██╗</text>
-    <text x="155" y="80" class="txt glitch">██║   ██║█████╗  ██║        ██║   ██║   ██║██████╔╝</text>
-    <text x="155" y="100" class="txt glitch">╚██╗ ██╔╝██╔══╝  ██║        ██║   ██║   ██║██╔══██╗</text>
-    <text x="155" y="120" class="txt glitch"> ╚████╔╝ ███████╗╚██████╗   ██║   ╚██████╔╝██║  ██║</text>
-    <text x="155" y="140" class="txt glitch">  ╚═══╝  ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝</text>
+    <text x="155" y="40" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██╗   ██╗███████╗ ██████╗████████╗ ██████╗ ████▓▓╗ </text>
+    <text x="155" y="60" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██║   ██║██╔════╝██╔════╝╚══██╔══╝██╔═══██╗██╔══▓▒╗</text>
+    <text x="155" y="80" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██║   ██║█████╗  ██║        ██║   ██║   ██║████▓▓╔╝</text>
+    <text x="155" y="100" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">╚██╗ ██╔╝██╔══╝  ██║        ██║   ██║   ██║██╔══▓▒╗</text>
+    <text x="155" y="120" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;"> ╚████╔╝ ███████╗╚██████╗   ██║   ╚██████╔╝██║  ▓▒║</text>
+    <text x="155" y="140" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">  ╚═══╝  ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝</text>
+  </g>
+  <g class="frame f57">
+    <text x="155" y="40" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██╗   ██╗███████╗ ██████╗████████╗ ██████╗ █████▓╗ </text>
+    <text x="155" y="60" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██║   ██║██╔════╝██╔════╝╚══██╔══╝██╔═══██╗██╔══▓▓╗</text>
+    <text x="155" y="80" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██║   ██║█████╗  ██║        ██║   ██║   ██║█████▓╔╝</text>
+    <text x="155" y="100" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">╚██╗ ██╔╝██╔══╝  ██║        ██║   ██║   ██║██╔══▓▓╗</text>
+    <text x="155" y="120" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;"> ╚████╔╝ ███████╗╚██████╗   ██║   ╚██████╔╝██║  ▓▓║</text>
+    <text x="155" y="140" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">  ╚═══╝  ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝</text>
+  </g>
+  <g class="frame f58">
+    <text x="155" y="40" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██╗   ██╗███████╗ ██████╗████████╗ ██████╗ ██████╗ </text>
+    <text x="155" y="60" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██║   ██║██╔════╝██╔════╝╚══██╔══╝██╔═══██╗██╔══█▓╗</text>
+    <text x="155" y="80" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██║   ██║█████╗  ██║        ██║   ██║   ██║██████╔╝</text>
+    <text x="155" y="100" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">╚██╗ ██╔╝██╔══╝  ██║        ██║   ██║   ██║██╔══█▓╗</text>
+    <text x="155" y="120" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;"> ╚████╔╝ ███████╗╚██████╗   ██║   ╚██████╔╝██║  █▓║</text>
+    <text x="155" y="140" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">  ╚═══╝  ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝</text>
+  </g>
+  <g class="frame f59">
+    <text x="155" y="40" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██╗   ██╗███████╗ ██████╗████████╗ ██████╗ ██████╗ </text>
+    <text x="155" y="60" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██║   ██║██╔════╝██╔════╝╚══██╔══╝██╔═══██╗██╔══██╗</text>
+    <text x="155" y="80" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██║   ██║█████╗  ██║        ██║   ██║   ██║██████╔╝</text>
+    <text x="155" y="100" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">╚██╗ ██╔╝██╔══╝  ██║        ██║   ██║   ██║██╔══██╗</text>
+    <text x="155" y="120" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;"> ╚████╔╝ ███████╗╚██████╗   ██║   ╚██████╔╝██║  ██║</text>
+    <text x="155" y="140" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">  ╚═══╝  ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝</text>
+  </g>
+  <g class="frame f60">
+    <text x="155" y="40" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██╗   ██╗███████╗ ██████╗████████╗ ██████╗ ██████╗ </text>
+    <text x="155" y="60" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██║   ██║██╔════╝██╔════╝╚══██╔══╝██╔═══██╗██╔══██╗</text>
+    <text x="155" y="80" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">██║   ██║█████╗  ██║        ██║   ██║   ██║██████╔╝</text>
+    <text x="155" y="100" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">╚██╗ ██╔╝██╔══╝  ██║        ██║   ██║   ██║██╔══██╗</text>
+    <text x="155" y="120" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;"> ╚████╔╝ ███████╗╚██████╗   ██║   ╚██████╔╝██║  ██║</text>
+    <text x="155" y="140" style="font-family:'Courier New',monospace;font-size:16px;fill:#00B4D8;white-space:pre;font-weight:bold;">  ╚═══╝  ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝</text>
   </g>
 </svg>

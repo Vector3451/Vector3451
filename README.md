@@ -2,7 +2,7 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:00b4d8,100:0d1117&height=80&section=header"/>
 <div align="center">
 
-<img src="animated_logo.svg" width="100%" alt="Vector3451 Animated Matrix Logo"/>
+<img src="animated_logo.svg" width="100%" alt="Vector3451 Animated Glitch Logo"/>
 
 [![Visitors](https://komarev.com/ghpvc/?username=Vector3451&style=flat-square&color=00B4D8&labelColor=0d1117&label=VISITORS)](https://github.com/Vector3451)
 &nbsp;
@@ -23,13 +23,6 @@
 *Infiltrate the system. Find the 3 hidden flags to prove your rank.*<br/>
 *Flags Found: [ 0 / 3 ]*
 
-<br/>
-
-<a href="#-nodebin"><code>[ LEVEL_1: PORT_SCAN ]</code></a> &nbsp;&nbsp;
-<a href="#-access-denied"><code>[ LEVEL_2: FIREWALL_BYPASS ]</code></a> &nbsp;&nbsp;
-<a href="#-kernel-panic"><code>[ LEVEL_3: KERNEL_DECRYPTION ]</code></a> &nbsp;&nbsp;
-<a href="#-hacker-intelligence"><code>[ HINT_SYSTEM ]</code></a>
-
 </div>
 
 <br/>
@@ -40,41 +33,71 @@
 <summary><code>🖥️ [remote@Vector3451] ~$ ./initialize_breach.sh</code></summary>
 
 ```yaml
-STATUS: "BOOTING_OVERRIDE_PROTOCOLS"
-CONNECTION: "SECURE_CONNECTION_ESTABLISHED"
+STATUS: "SECURE_SHELL_OPEN"
+MISSION: "Locate 3 hidden flags embedded in this system"
+RULES:
+  - No flag will simply be handed to you
+  - You must decode, inspect, and think
+  - Use: browser devtools, base64 decoders, rot13 tools
 ```
 </details>
 
 <details>
-<summary><code>💻 [remote@Vector3451] ~$ scan_network --target localhost</code></summary>
+<summary><code>💻 LEVEL 1 — [remote@Vector3451] ~$ ls /proc/net/intercept</code></summary>
 
 ```diff
-+ PORT 8080: OPEN
-+ PORT 22:   FILTERED
-! ALERT: LEGACY BACKDOOR DETECTED.
-+ Flag #1: flag{1_system_access_granted}
++ [SYS] Scanned 256 ports. One service is leaking.
++ [SYS] The port number itself is the key offset.
+! Decode this ROT13 string to find it:
+  synt{1_cbeg_fpna_pbzcyrgr}
+# HINT: Use rot13.com or any ROT13 decoder. The result IS your flag.
 ```
 </details>
 
 <details>
-<summary><code>💻 [remote@Vector3451] ~$ bypass_firewall --method neural</code></summary>
+<summary><code>💻 LEVEL 2 — [remote@Vector3451] ~$ strings /dev/null | grep HIDDEN</code></summary>
 
 ```diff
-- ERROR: PAYLOAD BLOCKED BY ICE FIREWALL.
-! HINT: Inspect the raw markdown packet source for encrypted comments.
-# STATUS: PACKET_INTERCEPT_REQUIRED
+- [ICE] FIREWALL ACTIVE. PAYLOAD REJECTED.
+! [SYS] Binary fragments intercepted from memory:
+  01100110 01101100 01100001 01100111 01111011 00110010
+  01011111 01100110 01101001 01110010 01100101 01110111
+  01100001 01101100 01101100 01011111 01100100 01110010
+  01101111 01110000 01110000 01100101 01100100 01111101
+# HINT: Convert each 8-bit binary group to ASCII. The full string is your flag.
 ```
-<!-- Flag #2 (Base64 of "flag{2_bypassed_the_firewall}"): ZmxhZ3syX2J5cGFzc2VkX3RoZV9maXJld2FsbH0= -->
 </details>
 
 <details>
-<summary><code>💻 [remote@Vector3451] ~$ decrypt_kernel --force</code></summary>
+<summary><code>💻 LEVEL 3 — [remote@Vector3451] ~$ read_memory --hex --offset 0xDEAD</code></summary>
 
 ```diff
-- CRITICAL: MEMORY BOUNDS EXCEEDED.
-! HINT: Review the alt-text tooltip of the panic status below to extract the final key.
+- [KERNEL] MEMORY READ FAILED. SEGMENT PROTECTED.
+! [SYS] One commit in this repository carries the final flag in its message.
+! [SYS] Navigate to the commit history: github.com/Vector3451/Vector3451/commits
+# HINT: Look for a commit titled with a hex string. The flag is hidden in the message body.
 ```
-<img src="https://img.shields.io/badge/Status-Kernel_Panic-red?style=for-the-badge" title="flag{3_kernel_override_complete}" alt="flag{3_kernel_override_complete}" />
+</details>
+
+<details>
+<summary><code>📡 [remote@Vector3451] ~$ decode_hints --all</code></summary>
+
+```yaml
+LEVEL_1:
+  tool: "rot13.com"
+  input: "synt{1_cbeg_fpna_pbzcyrgr}"
+  action: "Paste the string, copy the output"
+
+LEVEL_2:
+  tool: "Any binary-to-text converter (e.g. rapidtables.com/convert/number/binary-to-ascii.html)"
+  input: "The binary groups above"
+  action: "Convert each 8-bit block to its ASCII character"
+
+LEVEL_3:
+  tool: "GitHub commit history"
+  url: "github.com/Vector3451/Vector3451/commits/main"
+  action: "Find the commit with a hex title. The flag is in its body."
+```
 </details>
 
 </div>
@@ -85,17 +108,15 @@ CONNECTION: "SECURE_CONNECTION_ESTABLISHED"
 <div align="center">
 
 ```
->_ CONTRIBUTION TRACKER  ···  space_invaders.log
+>_ CONTRIBUTION TRACKER  ···  snake.log
 ```
 
 <picture>
-  <!-- Auto-generated Space Shooter GIF via GitHub Actions -->
-  <source media="(prefers-color-scheme: dark)" srcset="space-shooter.gif"/>
-  <source media="(prefers-color-scheme: light)" srcset="space-shooter.gif"/>
-  <img src="space-shooter.gif" width="100%" alt="[AWAITING MIDNIGHT RUN] Compiling Space Invaders from your Commit History..."/>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Vector3451/Vector3451/main/dist/snake.svg"/>
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Vector3451/Vector3451/main/dist/snake.svg"/>
+  <img src="https://raw.githubusercontent.com/Vector3451/Vector3451/main/dist/snake.svg" alt="Snake Contribution Graph" width="100%"/>
 </picture>
 
-*(Note: Target coordinates and Boss encounter sequences are determined automatically by your GitHub commit volume! The GIF will switch to your own live graph once the GitHub Action successfully completes its first midnight run.)*
 </div>
 
 ---
