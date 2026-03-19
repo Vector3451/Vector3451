@@ -118,9 +118,5 @@
 
 <img src="https://readme-typing-svg.demolab.com?font=Share+Tech+Mono&size=13&duration=3000&pause=1200&color=00B4D8&center=true&vCenter=true&width=480&lines=%24+shutdown+--graceful+--save+progress;Saving+state...+[OK];Committing+to+main...+[OK];Session+logged.+See+you+tomorrow."/>
 
-```
-[ github.com/Vector3451 ]  ·  [ SYSTEM_ARCHITECT ]  ·  [ 2026 ]
-```
-
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:00b4d8,100:0d1117&height=80&section=footer"/>
 </div>
