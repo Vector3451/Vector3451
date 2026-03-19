@@ -77,6 +77,12 @@ RULES:
 ! [SYS] Navigate to the commit history: github.com/Vector3451/Vector3451/commits
 # HINT: Look for a commit titled with a hex string. The flag is hidden in the message body.
 ```
+
+```yaml
+MISSION: "If you found all 3 flags, congratulations. You are in."
+REWARD: "Click the badge below to claim your master access token."
+```
+<a href="https://github.com/Vector3451"><img src="https://img.shields.io/badge/ACCESS_GRANTED-SYSTEM_MASTER-00B4D8?style=for-the-badge&logo=hackthebox&logoColor=white" alt="Access Granted Reward"/></a>
 </details>
 
 <details>
@@ -104,18 +110,20 @@ LEVEL_3:
 
 ---
 
-<!-- CONTRIBUTION GRAPH -->
+<!-- AUDIO SEQUENCER -->
 <div align="center">
 
 ```
->_ CONTRIBUTION TRACKER  ···  snake.log
+>_ MUSIC SEQUENCER TERMINAL  ···  vector3451.wav
 ```
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Vector3451/Vector3451/main/dist/snake.svg"/>
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Vector3451/Vector3451/main/dist/snake.svg"/>
-  <img src="https://raw.githubusercontent.com/Vector3451/Vector3451/main/dist/snake.svg" alt="Snake Contribution Graph" width="100%"/>
-</picture>
+<a href="https://vector3451.github.io/Vector3451/sequencer.html">
+  <img src="https://readme-typing-svg.demolab.com?font=Share+Tech+Mono&size=20&duration=3000&pause=500&color=00B4D8&center=true&vCenter=true&width=480&lines=%5B+LAUNCH+AUDIO+SEQUENCER+%5D;%E2%96%B6+PLAY+BEAT;%E2%96%A0+STOP" alt="Launch Sequencer"/>
+</a>
+
+*Access the interactive 16-step 8-track Web Audio API synthesizer directly in your browser. Compose loop architectures, trigger drum synthesis, and manipulate frequency data.*
+
+**(Note: You must enable GitHub Pages on this repository to let the sequencer run!)**
 
 </div>
 
