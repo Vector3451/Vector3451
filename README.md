@@ -1,12 +1,18 @@
-<p align="center">
-  <img src="assets/vector3451_logo.png" width="300" />
-</p>
+```text
+ __      __  ______   _____  _______   ____   _____  _____   __   
+ \ \    / / |  ____| / ____| |__   __| / __ \ |  __ \ |__  | /_ |  
+  \ \  / /  | |__   | |         | |   | |  | || |__) |   | |  | |  
+   \ \/ /   |  __|  | |         | |   | |  | ||  _  /    | |  | |  
+    \  /    | |____ | |____     | |   | |__| || | \ \  __| |  | |  
+     \/     |______| \_____|    |_|    \____/ |_|  \_\|____/  |_|  
+```
 
-# Vector3451 | Neural Architect
+### 🕹️ Terminal Breach [SYSTEM_SCAN: ACTIVE]
+*A simple hacking puzzle. Choose your action to increase your rank.*
 
-<p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=24&pause=1000&color=00B4D8&center=true&vCenter=true&width=500&lines=SYSTEM_BOOT...;ACCESSING_NEURAL_UPLINK...;DECRYPTING_BIO_V5.0...;SUCCESS_ESTABLISHED." />
-</p>
+- **[[ SCAN_NETWORK_PORTS ]](#-port-scan-report)**
+- **[[ BYPASS_FIREWALL ]](#-security-alert)**
+- **[[ OVERRIDE_KERNEL ]](#-kernel-compromised)**
 
 ---
 
@@ -15,10 +21,29 @@
 
 ---
 
-### 🧬 Connectivity Radar
+### 🧬 Activity Radar
 [![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=Vector3451&bg_color=0D1117&color=00b4d8&line=00b4d8&point=ffffff&area=true&hide_border=true)](https://github.com/Vector3451)
 
 ---
 
-### 🏆 Hacker Rank
-![Trophies](https://github-profile-trophy.vercel.app/?username=Vector3451&theme=oceanic-next&no-bg=true&column=7&margin-w=15&no-frame=true)
+### 🏆 Hacker Rank (Trophies)
+![Trophies](https://github-profile-trophy.vercel.app/?username=Vector3451&theme=tokyonight&no-bg=true&column=7&margin-w=15&no-frame=true)
+
+---
+
+### 🛰️ Terminal Output (Game Results)
+
+#### 📡 Port Scan Report
+> **[8080/TCP]**: Open. Discovered legacy debug console.
+> **[22/TCP]**: Filtered. Stealth level 2 required.
+> **Rank Update**: [Script Kiddie -> Novice]
+
+#### ⚠️ Security Alert
+> Firewall detected unauthorized intrusion from local neural uplink.
+> **Status**: Access Denied. Retry after cooldown.
+
+#### 🔓 Kernel Compromised
+> Neural-bypass successful. Root access established to BIOS_v9.1.
+> **Rank Update**: [Elite Architect]
+
+---
