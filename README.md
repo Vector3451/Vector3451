@@ -2,12 +2,12 @@
 <div align="center">
 
 ```text
- _    __          __               _____ __ __  ______   ___  
-| |  / /__  _____/ /_____  _____  |__  // // / / ____/  <  /  
-| | / / _ \/ ___/ __/ __ \/ ___/   /_ </ // /_/___ \    / /   
-| |/ /  __/ /__/ /_/ /_/ / /     ___/ /__  __/___/ /   / /    
-|___/\___/\___/\__/\____/_/     /____/  /_/ /_____/   /_/     
-   [::] SYSTEM_CORE_COMPROMISED   ::   ACCESS_GRANTED [::]
+██╗   ██╗███████╗ ██████╗████████╗ ██████╗ ██████╗ 
+██║   ██║██╔════╝██╔════╝╚══██╔══╝██╔═══██╗██╔══██╗
+██║   ██║█████╗  ██║        ██║   ██║   ██║██████╔╝
+╚██╗ ██╔╝██╔══╝  ██║        ██║   ██║   ██║██╔══██╗
+ ╚████╔╝ ███████╗╚██████╗   ██║   ╚██████╔╝██║  ██║
+  ╚═══╝  ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝    
 ```
 
 [![Visitors](https://komarev.com/ghpvc/?username=Vector3451&style=flat-square&color=00B4D8&labelColor=0d1117&label=VISITORS)](https://github.com/Vector3451)
@@ -16,22 +16,6 @@
 &nbsp;
 [![Stars](https://img.shields.io/github/stars/Vector3451?style=flat-square&color=00B4D8&labelColor=0d1117&label=STARS&logo=github)](https://github.com/Vector3451)
 </div>
-
----
-
-<!-- ABOUT -->
-```python
-# Vector3451.py — instance config
-
-class Architect:
-    alias      = "Vector3451"
-    role       = "Systems Architect & Developer"
-    languages  = ["Python", "JavaScript", "Rust", "TypeScript"]
-    focus      = ["Artificial Intelligence", "Cybersecurity", "Distributed Systems"]
-    mindset    = "Data-driven · Stealthy · Relentless"
-    philosophy = "Analyze the node. Exploit the vulnerability. Own the network."
-    status     = "[ONLINE] — bypassing neural firewalls"
-```
 
 ---
 
@@ -124,45 +108,9 @@ class Architect:
 <img src="https://leetcard.jacoblin.cool/Vinay_Vijay_2?theme=dark&font=Fira%20Code&ext=heatmap&border=0&radius=4&width=500&colors=0d1117,161b22,00B4D8,00B4D8,c9d1d9,00B4D8,ff7b72,ffa657,00B4D8" alt="LeetCode Stats"/>
 </div>
 
----
-
-<!-- DSA + OBJECTIVES -->
-<div align="center">
-
 ```
 >_ SYSTEM STATUS  ···  2026.log
 ```
-
-```text
-╔══════════════════════════════════════════════════════════════════╗
-║  FOCUS MATRIX                                                    ║
-╠═══════════════════╦══════════════════╦═══════════════════════════╣
-║  AI Engineering   ║  [##########]    ║  CRITICAL                 ║
-║  Cybersecurity    ║  [#########·]    ║  CRITICAL                 ║
-║  Backend Arch.    ║  [######····]    ║  HIGH                     ║
-║  CTF Challenges   ║  [####······]    ║  MEDIUM                   ║
-║  Algorithms (LC)  ║  [##########]    ║  ALWAYS                   ║
-╚═══════════════════╩══════════════════╩═══════════════════════════╝
-```
-
-```yaml
-# OBJECTIVES.yml — FY 2026
-
-Artificial Intelligence:
-  target:   "Build autonomous reasoning agents"
-  domains:  [LLMs, RAG matrices, deep neural networks]
-
-Cybersecurity:
-  goal:     "Master penetration testing and exploit crafting"
-  rule:     "Hack the planet."
-
-Mindset:
-  mode:     "Systems architect — view the whole network"
-  practice: "Continuously refactor reality"
-  exit_code: 0  # no unresolved exceptions allowed
-```
-
----
 
 <!-- FOOTER -->
 <div align="center">
