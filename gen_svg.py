@@ -24,40 +24,38 @@ def render_line(line, f):
         out += char
     return escape(out)
 
-BASE_X = 100
 BASE_Y = 40
 LINE_H = 20
-FONT = "font-family:'Courier New',monospace;font-size:16px;white-space:pre;font-weight:bold;"
+FONT = "font-family:'Courier New',monospace;font-size:16px;white-space:pre;font-weight:bold;text-anchor:middle;"
 
 def make_normal_frame(f):
     rows = []
     for y, line in enumerate(orig_lines):
         rendered = render_line(line, f)
-        rows.append(f'    <text x="{BASE_X}" y="{BASE_Y + y*LINE_H}" style="{FONT}fill:#00B4D8;">{rendered}</text>')
+        rows.append(f'    <text x="50%" y="{BASE_Y + y*LINE_H}" style="{FONT}fill:#00B4D8;">{rendered}</text>')
     return rows
 
 def make_glitch_frame(f):
-    """Visual glitch: slice rows into bands with horizontal offsets + random row shifts"""
+    """Visual glitch: applying slice rows into bands with horizontal offsets + random row shifts"""
     rows = []
     for y, line in enumerate(orig_lines):
         rendered = render_line(line, f)
-        # Each glitch row gets a random x-offset (visual position shift)
-        glitch_x = BASE_X + random.randint(-8, 8)
-        # Some rows get a y-shift too for "scan-line tear" feel
-        glitch_y = BASE_Y + y*LINE_H + random.choice([-2, 0, 0, 2])
-        # Colour is either normal teal, a red, or a cyan
-        colour = random.choice(["#00B4D8", "#00B4D8", "#ff003c", "#00e5ff"])
+        # Shift slightly using dx or just shift x="50% + rand"
+        dx = random.randint(-15, 15)
+        glitch_y = BASE_Y + y*LINE_H + random.choice([-3, 0, 0, 0, 3])
+        colour = random.choice(["#00B4D8", "#00B4D8", "#00B4D8", "#ff003c", "#00e5ff"])
+        
         # Optionally render a duplicate ghost slightly offset
-        rows.append(f'    <text x="{glitch_x+5}" y="{glitch_y}" style="{FONT}fill:#ff003c;opacity:0.35;">{rendered}</text>')
-        rows.append(f'    <text x="{glitch_x}" y="{glitch_y}" style="{FONT}fill:{colour};">{rendered}</text>')
+        rows.append(f'    <text x="50%" dx="{dx + 5}" y="{glitch_y}" style="{FONT}fill:#ff003c;opacity:0.35;">{rendered}</text>')
+        rows.append(f'    <text x="50%" dx="{dx}" y="{glitch_y}" style="{FONT}fill:{colour};">{rendered}</text>')
     return rows
 
 frames = []
 for f in range(width + 6):
     frames.append(make_normal_frame(f))
-    if f % 12 == 0:     # insert glitch burst every 12 normal frames
+    if f % 12 == 0:
         frames.append(make_glitch_frame(f))
-        frames.append(make_glitch_frame(f))  # two quick glitch frames for snap feel
+        frames.append(make_glitch_frame(f))
 
 total = len(frames)
 dur = total * 0.08
