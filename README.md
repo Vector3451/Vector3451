@@ -1,7 +1,6 @@
 <!-- HEADER -->
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:00b4d8,100:0d1117&height=80&section=header"/>
 <div align="center">
-
 <img src="animated_logo.svg?v=5" width="100%" alt="Vector3451 Animated Glitch Logo"/>
 
 [![Visitors](https://komarev.com/ghpvc/?username=Vector3451&style=flat-square&color=00B4D8&labelColor=0d1117&label=VISITORS)](https://github.com/Vector3451)
@@ -160,6 +159,7 @@ LEVEL_3:
 
 <!-- FOOTER -->
 <div align="center">
+
 
 <img src="https://readme-typing-svg.demolab.com?font=Share+Tech+Mono&size=13&duration=3000&pause=1200&color=00B4D8&center=true&vCenter=true&width=480&lines=%24+shutdown+--graceful+--save+progress;Saving+state...+[OK];Committing+to+main...+[OK];Session+logged.+See+you+tomorrow."/>
 
