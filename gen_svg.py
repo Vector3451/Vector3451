@@ -24,30 +24,28 @@ def render_line(line, f):
         out += char
     return escape(out)
 
+BASE_X = 155
 BASE_Y = 40
 LINE_H = 20
-FONT = "font-family:'Courier New',monospace;font-size:16px;white-space:pre;font-weight:bold;text-anchor:middle;"
+FONT = "font-family:'Courier New',monospace;font-size:16px;white-space:pre;font-weight:bold;"
 
 def make_normal_frame(f):
     rows = []
     for y, line in enumerate(orig_lines):
         rendered = render_line(line, f)
-        rows.append(f'    <text x="50%" y="{BASE_Y + y*LINE_H}" style="{FONT}fill:#00B4D8;">{rendered}</text>')
+        rows.append(f'    <text x="{BASE_X}" y="{BASE_Y + y*LINE_H}" style="{FONT}fill:#00B4D8;">{rendered}</text>')
     return rows
 
 def make_glitch_frame(f):
-    """Visual glitch: applying slice rows into bands with horizontal offsets + random row shifts"""
     rows = []
     for y, line in enumerate(orig_lines):
         rendered = render_line(line, f)
-        # Shift slightly using dx or just shift x="50% + rand"
         dx = random.randint(-15, 15)
+        glitch_x = BASE_X + dx
         glitch_y = BASE_Y + y*LINE_H + random.choice([-3, 0, 0, 0, 3])
         colour = random.choice(["#00B4D8", "#00B4D8", "#00B4D8", "#ff003c", "#00e5ff"])
-        
-        # Optionally render a duplicate ghost slightly offset
-        rows.append(f'    <text x="50%" dx="{dx + 5}" y="{glitch_y}" style="{FONT}fill:#ff003c;opacity:0.35;">{rendered}</text>')
-        rows.append(f'    <text x="50%" dx="{dx}" y="{glitch_y}" style="{FONT}fill:{colour};">{rendered}</text>')
+        rows.append(f'    <text x="{glitch_x + 5}" y="{glitch_y}" style="{FONT}fill:#ff003c;opacity:0.35;">{rendered}</text>')
+        rows.append(f'    <text x="{glitch_x}" y="{glitch_y}" style="{FONT}fill:{colour};">{rendered}</text>')
     return rows
 
 frames = []
@@ -81,4 +79,3 @@ lines_out.append('</svg>')
 
 with open("animated_logo.svg","w",encoding="utf-8") as fh:
     fh.write("\n".join(lines_out))
-print(f"Done: {total} frames, {dur:.2f}s")
