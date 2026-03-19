@@ -96,9 +96,10 @@ CONNECTION: "SECURE_CONNECTION_ESTABLISHED"
 ```
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/czl9707/github-space-shooter/main/demo/demo.gif"/>
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/czl9707/github-space-shooter/main/demo/demo.gif"/>
-  <img src="https://raw.githubusercontent.com/czl9707/github-space-shooter/main/demo/demo.gif" width="100%" alt="Space Invaders Contribution Graph"/>
+  <!-- Auto-generated Space Shooter GIF via GitHub Actions -->
+  <source media="(prefers-color-scheme: dark)" srcset="space-shooter.gif"/>
+  <source media="(prefers-color-scheme: light)" srcset="space-shooter.gif"/>
+  <img src="space-shooter.gif" width="100%" alt="[AWAITING MIDNIGHT RUN] Compiling Space Invaders from your Commit History..."/>
 </picture>
 
 *(Note: Target coordinates and Boss encounter sequences are determined automatically by your GitHub commit volume! The GIF will switch to your own live graph once the GitHub Action successfully completes its first midnight run.)*
