@@ -106,7 +106,7 @@
 >_ LEETCODE TERMINAL  ···  Vinay_Vijay_2.bin
 ```
 
-<img src="https://leetcard.jacoblin.cool/Vinay_Vijay_2?theme=dark&font=Fira%20Code&ext=heatmap&border=0&radius=4&width=500&colors=0d1117,161b22,00B4D8,00B4D8,c9d1d9,00B4D8,ff7b72,ffa657,00B4D8" alt="LeetCode Stats"/>
+<img src="https://leetcard.jacoblin.cool/Vinay Vijay?theme=dark&font=Fira%20Code&ext=heatmap&border=0&radius=4&width=500&colors=0d1117,161b22,00B4D8,00B4D8,c9d1d9,00B4D8,ff7b72,ffa657,00B4D8" alt="LeetCode Stats"/>
 </div>
 
 ```
