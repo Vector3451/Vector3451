@@ -1,15 +1,9 @@
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=00b4d8&height=150&section=header&text=NEURAL_ARCHITECT&theme=dark&fontSize=40&fontColor=ffffff&animation=fadeIn&fontAlignY=40" />
-</p>
-
-```text
- _    __          __               _____ __ __  ______   ___  
-| |  / /__  _____/ /_____  _____  |__  // // / / ____/  <  /  
-| | / / _ \/ ___/ __/ __ \/ ___/   /_ </ // /_/___ \    / /   
-| |/ /  __/ /__/ /_/ /_/ / /     ___/ /__  __/___/ /   / /    
-|___/\___/\___/\__/\____/_/     /____/  /_/ /_____/   /_/     
-   [::] SYSTEM_CORE_COMPROMISED   ::   ACCESS_GRANTED [::]
-```
+                                                                                          ██╗   ██╗███████╗ ██████╗████████╗ ██████╗ ██████╗ 
+                                                                                          ██║   ██║██╔════╝██╔════╝╚══██╔══╝██╔═══██╗██╔══██╗
+                                                                                          ██║   ██║█████╗  ██║        ██║   ██║   ██║██████╔╝
+                                                                                          ╚██╗ ██╔╝██╔══╝  ██║        ██║   ██║   ██║██╔══██╗
+                                                                                           ╚████╔╝ ███████╗╚██████╗   ██║   ╚██████╔╝██║  ██║
+                                                                                            ╚═══╝  ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝
 
 <p align="center">
   <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=20&pause=1000&color=00B4D8&center=true&vCenter=true&width=500&lines=BOOTING_NEURAL_UPLINK...;CONNECTION_SECURE_...;CTF_V3.0_INITIALIZED...;" />
