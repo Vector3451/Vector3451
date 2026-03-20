@@ -232,7 +232,8 @@
     <text x="155" y="120" style="font-family:'Courier New',monospace;font-size:16px;white-space:pre;font-weight:bold;fill:#00B4D8;"> ╚████╔╝ ███████╗╚██████╗   ██║   ╚██████╔╝██║  ██║</text>
     <text x="155" y="140" style="font-family:'Courier New',monospace;font-size:16px;white-space:pre;font-weight:bold;fill:#ff003c;">  ╚═══╝  ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝</text>
 </g>
-<g class="fr f7">
+<!-- Persistent stable base frame so the logo never disappears -->
+<g class="stableBase">
     <text x="155" y="40" style="font-family:'Courier New',monospace;font-size:16px;white-space:pre;font-weight:bold;fill:#00B4D8;">░█╗   ██╗███████╗ ██████╗████████╗ ██████╗ ██████╗ </text>
     <text x="155" y="60" style="font-family:'Courier New',monospace;font-size:16px;white-space:pre;font-weight:bold;fill:#00B4D8;">░█║   ██║██╔════╝██╔════╝╚══██╔══╝██╔═══██╗██╔══██╗</text>
     <text x="155" y="80" style="font-family:'Courier New',monospace;font-size:16px;white-space:pre;font-weight:bold;fill:#00B4D8;">░█║   ██║█████╗  ██║        ██║   ██║   ██║██████╔╝</text>
