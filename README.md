@@ -180,7 +180,7 @@ LEVEL_3:
 
 <img src="https://github-readme-stats.vercel.app/api?username=Vector3451&show_icons=true&theme=github_dark&hide_border=true&bg_color=0D1117&title_color=00B4D8&icon_color=00B4D8&text_color=C9D1D9&border_radius=4" height="160"/>
 &nbsp;
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Vector3451&layout=compact&theme=github_dark&hide_border=true&bg_color=0D1117&title_color=00B4D8&text_color=C9D1D9&border_radius=4" height="160"/>
+<a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=java,python,html,css,c,cpp,bash,linux,git,github&perline=5&theme=dark" height="160"/></a>
 
 <img src="https://streak-stats.demolab.com?user=Vector3451&theme=github-dark-blue&hide_border=true&background=0D1117&ring=00B4D8&fire=00B4D8&currStreakLabel=00B4D8&sideLabels=9FB3C8&dates=C9D1D9&border_radius=4" width="60%"/>
 

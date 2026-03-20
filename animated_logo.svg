@@ -30,73 +30,73 @@
 </defs>
 <style>
 .fr{opacity:0}
-.f0{animation:p 5.36s 0.00s infinite step-end;}
-.f1{animation:p 5.36s 0.08s infinite step-end;}
-.f2{animation:p 5.36s 0.16s infinite step-end;}
-.f3{animation:p 5.36s 0.24s infinite step-end;}
-.f4{animation:p 5.36s 0.32s infinite step-end;}
-.f5{animation:p 5.36s 0.40s infinite step-end;}
-.f6{animation:p 5.36s 0.48s infinite step-end;}
-.f7{animation:p 5.36s 0.56s infinite step-end;}
-.f8{animation:p 5.36s 0.64s infinite step-end;}
-.f9{animation:p 5.36s 0.72s infinite step-end;}
-.f10{animation:p 5.36s 0.80s infinite step-end;}
-.f11{animation:p 5.36s 0.88s infinite step-end;}
-.f12{animation:p 5.36s 0.96s infinite step-end;}
-.f13{animation:p 5.36s 1.04s infinite step-end;}
-.f14{animation:p 5.36s 1.12s infinite step-end;}
-.f15{animation:p 5.36s 1.20s infinite step-end;}
-.f16{animation:p 5.36s 1.28s infinite step-end;}
-.f17{animation:p 5.36s 1.36s infinite step-end;}
-.f18{animation:p 5.36s 1.44s infinite step-end;}
-.f19{animation:p 5.36s 1.52s infinite step-end;}
-.f20{animation:p 5.36s 1.60s infinite step-end;}
-.f21{animation:p 5.36s 1.68s infinite step-end;}
-.f22{animation:p 5.36s 1.76s infinite step-end;}
-.f23{animation:p 5.36s 1.84s infinite step-end;}
-.f24{animation:p 5.36s 1.92s infinite step-end;}
-.f25{animation:p 5.36s 2.00s infinite step-end;}
-.f26{animation:p 5.36s 2.08s infinite step-end;}
-.f27{animation:p 5.36s 2.16s infinite step-end;}
-.f28{animation:p 5.36s 2.24s infinite step-end;}
-.f29{animation:p 5.36s 2.32s infinite step-end;}
-.f30{animation:p 5.36s 2.40s infinite step-end;}
-.f31{animation:p 5.36s 2.48s infinite step-end;}
-.f32{animation:p 5.36s 2.56s infinite step-end;}
-.f33{animation:p 5.36s 2.64s infinite step-end;}
-.f34{animation:p 5.36s 2.72s infinite step-end;}
-.f35{animation:p 5.36s 2.80s infinite step-end;}
-.f36{animation:p 5.36s 2.88s infinite step-end;}
-.f37{animation:p 5.36s 2.96s infinite step-end;}
-.f38{animation:p 5.36s 3.04s infinite step-end;}
-.f39{animation:p 5.36s 3.12s infinite step-end;}
-.f40{animation:p 5.36s 3.20s infinite step-end;}
-.f41{animation:p 5.36s 3.28s infinite step-end;}
-.f42{animation:p 5.36s 3.36s infinite step-end;}
-.f43{animation:p 5.36s 3.44s infinite step-end;}
-.f44{animation:p 5.36s 3.52s infinite step-end;}
-.f45{animation:p 5.36s 3.60s infinite step-end;}
-.f46{animation:p 5.36s 3.68s infinite step-end;}
-.f47{animation:p 5.36s 3.76s infinite step-end;}
-.f48{animation:p 5.36s 3.84s infinite step-end;}
-.f49{animation:p 5.36s 3.92s infinite step-end;}
-.f50{animation:p 5.36s 4.00s infinite step-end;}
-.f51{animation:p 5.36s 4.08s infinite step-end;}
-.f52{animation:p 5.36s 4.16s infinite step-end;}
-.f53{animation:p 5.36s 4.24s infinite step-end;}
-.f54{animation:p 5.36s 4.32s infinite step-end;}
-.f55{animation:p 5.36s 4.40s infinite step-end;}
-.f56{animation:p 5.36s 4.48s infinite step-end;}
-.f57{animation:p 5.36s 4.56s infinite step-end;}
-.f58{animation:p 5.36s 4.64s infinite step-end;}
-.f59{animation:p 5.36s 4.72s infinite step-end;}
-.f60{animation:p 5.36s 4.80s infinite step-end;}
-.f61{animation:p 5.36s 4.88s infinite step-end;}
-.f62{animation:p 5.36s 4.96s infinite step-end;}
-.f63{animation:p 5.36s 5.04s infinite step-end;}
-.f64{animation:p 5.36s 5.12s infinite step-end;}
-.f65{animation:p 5.36s 5.20s infinite step-end;}
-.f66{animation:p 5.36s 5.28s infinite step-end;}
+.f0{animation:p 2.68s 0.00s infinite step-end;}
+.f1{animation:p 2.68s 0.04s infinite step-end;}
+.f2{animation:p 2.68s 0.08s infinite step-end;}
+.f3{animation:p 2.68s 0.12s infinite step-end;}
+.f4{animation:p 2.68s 0.16s infinite step-end;}
+.f5{animation:p 2.68s 0.20s infinite step-end;}
+.f6{animation:p 2.68s 0.24s infinite step-end;}
+.f7{animation:p 2.68s 0.28s infinite step-end;}
+.f8{animation:p 2.68s 0.32s infinite step-end;}
+.f9{animation:p 2.68s 0.36s infinite step-end;}
+.f10{animation:p 2.68s 0.40s infinite step-end;}
+.f11{animation:p 2.68s 0.44s infinite step-end;}
+.f12{animation:p 2.68s 0.48s infinite step-end;}
+.f13{animation:p 2.68s 0.52s infinite step-end;}
+.f14{animation:p 2.68s 0.56s infinite step-end;}
+.f15{animation:p 2.68s 0.60s infinite step-end;}
+.f16{animation:p 2.68s 0.64s infinite step-end;}
+.f17{animation:p 2.68s 0.68s infinite step-end;}
+.f18{animation:p 2.68s 0.72s infinite step-end;}
+.f19{animation:p 2.68s 0.76s infinite step-end;}
+.f20{animation:p 2.68s 0.80s infinite step-end;}
+.f21{animation:p 2.68s 0.84s infinite step-end;}
+.f22{animation:p 2.68s 0.88s infinite step-end;}
+.f23{animation:p 2.68s 0.92s infinite step-end;}
+.f24{animation:p 2.68s 0.96s infinite step-end;}
+.f25{animation:p 2.68s 1.00s infinite step-end;}
+.f26{animation:p 2.68s 1.04s infinite step-end;}
+.f27{animation:p 2.68s 1.08s infinite step-end;}
+.f28{animation:p 2.68s 1.12s infinite step-end;}
+.f29{animation:p 2.68s 1.16s infinite step-end;}
+.f30{animation:p 2.68s 1.20s infinite step-end;}
+.f31{animation:p 2.68s 1.24s infinite step-end;}
+.f32{animation:p 2.68s 1.28s infinite step-end;}
+.f33{animation:p 2.68s 1.32s infinite step-end;}
+.f34{animation:p 2.68s 1.36s infinite step-end;}
+.f35{animation:p 2.68s 1.40s infinite step-end;}
+.f36{animation:p 2.68s 1.44s infinite step-end;}
+.f37{animation:p 2.68s 1.48s infinite step-end;}
+.f38{animation:p 2.68s 1.52s infinite step-end;}
+.f39{animation:p 2.68s 1.56s infinite step-end;}
+.f40{animation:p 2.68s 1.60s infinite step-end;}
+.f41{animation:p 2.68s 1.64s infinite step-end;}
+.f42{animation:p 2.68s 1.68s infinite step-end;}
+.f43{animation:p 2.68s 1.72s infinite step-end;}
+.f44{animation:p 2.68s 1.76s infinite step-end;}
+.f45{animation:p 2.68s 1.80s infinite step-end;}
+.f46{animation:p 2.68s 1.84s infinite step-end;}
+.f47{animation:p 2.68s 1.88s infinite step-end;}
+.f48{animation:p 2.68s 1.92s infinite step-end;}
+.f49{animation:p 2.68s 1.96s infinite step-end;}
+.f50{animation:p 2.68s 2.00s infinite step-end;}
+.f51{animation:p 2.68s 2.04s infinite step-end;}
+.f52{animation:p 2.68s 2.08s infinite step-end;}
+.f53{animation:p 2.68s 2.12s infinite step-end;}
+.f54{animation:p 2.68s 2.16s infinite step-end;}
+.f55{animation:p 2.68s 2.20s infinite step-end;}
+.f56{animation:p 2.68s 2.24s infinite step-end;}
+.f57{animation:p 2.68s 2.28s infinite step-end;}
+.f58{animation:p 2.68s 2.32s infinite step-end;}
+.f59{animation:p 2.68s 2.36s infinite step-end;}
+.f60{animation:p 2.68s 2.40s infinite step-end;}
+.f61{animation:p 2.68s 2.44s infinite step-end;}
+.f62{animation:p 2.68s 2.48s infinite step-end;}
+.f63{animation:p 2.68s 2.52s infinite step-end;}
+.f64{animation:p 2.68s 2.56s infinite step-end;}
+.f65{animation:p 2.68s 2.60s infinite step-end;}
+.f66{animation:p 2.68s 2.64s infinite step-end;}
 @keyframes p{0%{opacity:1}1.493%{opacity:0}100%{opacity:0}}
 .scan{animation:scanMove 3s linear infinite;}
 @keyframes scanMove{0%{transform:translateY(-200px)}100%{transform:translateY(200px)}}
@@ -126,7 +126,7 @@
 @keyframes cursorBlink{0%,100%{opacity:1}50%{opacity:0}}
 .noisebar{animation:noiseBarAnim 4.3s ease-in-out infinite;animation-delay:1.8s;}
 @keyframes noiseBarAnim{0%{opacity:0;transform:translateY(-160px)}5%{opacity:1}90%{opacity:0.6}100%{opacity:0;transform:translateY(160px)}}
-.flashFrame{animation:flashAnim 5.36s step-end infinite;animation-delay:1.3s;}
+.flashFrame{animation:flashAnim 2.68s step-end infinite;animation-delay:1.3s;}
 @keyframes flashAnim{0%{opacity:0}17%{opacity:0}17.5%{opacity:0.07}18%{opacity:0}100%{opacity:0}}
 </style>
 <rect width="100%" height="100%" fill="#0d1117" rx="8"/>
