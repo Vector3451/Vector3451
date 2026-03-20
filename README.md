@@ -78,7 +78,6 @@ RULES:
 
 ```yaml
 MISSION: "If you found all 3 flags, congratulations. You are in."
-REWARD: "Click the badge below to claim your master access token."
 ```
 
 <details>
@@ -99,18 +98,16 @@ REWARD: "Click the badge below to claim your master access token."
       🚩
     </td>
     <td align="center" width="200">
-      <img src="https://img.shields.io/badge/LEVEL_03-GIT__HISTORY-00B4D8?style=for-the-badge" /><br/>
-      <code>[ LOCKED ]</code><br/>
-      🚩
+      <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+        <img src="https://img.shields.io/badge/LEVEL_03-GIT__HISTORY-00B4D8?style=for-the-badge" /><br/>
+        <code>[ REVEAL FLAG ]</code><br/>
+        🚩
+      </a>
     </td>
   </tr>
 </table>
 
 </details>
-
-<a href="https://vector3451.github.io/Vector3451/flag_tracker.html"><img src="https://img.shields.io/badge/⚑_LAUNCH_TRACKER-INTERACT_IN_BROWSER-00B4D8?style=for-the-badge&logo=hackaday&logoColor=white" alt="Flag Tracker"/></a>
-&nbsp;
-<a href="https://github.com/Vector3451"><img src="https://img.shields.io/badge/ACCESS_GRANTED-SYSTEM_MASTER-00B4D8?style=for-the-badge&logo=hackthebox&logoColor=white" alt="Access Granted Reward"/></a>
 </details>
 
 <details>
