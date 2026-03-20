@@ -1,7 +1,7 @@
 <!-- HEADER -->
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:00b4d8,100:0d1117&height=80&section=header"/>
 <div align="center">
-<img src="animated_logo.svg?v=5" width="100%" alt="Vector3451 Animated Glitch Logo"/>
+<img src="animated_logo.svg?v=6" width="100%" alt="Vector3451 Animated Glitch Logo"/>
 
 [![Visitors](https://komarev.com/ghpvc/?username=Vector3451&style=flat-square&color=00B4D8&labelColor=0d1117&label=VISITORS)](https://github.com/Vector3451)
 &nbsp;
@@ -28,7 +28,7 @@
 <div align="left">
 
 <details open>
-<summary><code>🖥️ [remote@Vector3451] ~$ ./initialize_breach.sh</code></summary>
+<summary><code>🖤️ [remote@Vector3451] ~$ ./initialize_breach.sh</code></summary>
 
 ```yaml
 STATUS: "SECURE_SHELL_OPEN"
@@ -47,7 +47,7 @@ RULES:
 + [SYS] Scanned 256 ports. One service is leaking.
 + [SYS] The port number itself is the key offset.
 ! Decode this ROT13 string to find it:
-  synt{1_cbeg_fpna_pbzcyrgr}
+  synt{1_cbeg_fpna_pbzcyrgrq}
 # HINT: Use rot13.com or any ROT13 decoder. The result IS your flag.
 ```
 </details>
@@ -80,6 +80,36 @@ RULES:
 MISSION: "If you found all 3 flags, congratulations. You are in."
 REWARD: "Click the badge below to claim your master access token."
 ```
+
+<details>
+<summary><code>🏆 [remote@Vector3451] ~$ view_flag_status</code></summary>
+
+<br/>
+
+<table align="center">
+  <tr>
+    <td align="center" width="200">
+      <img src="https://img.shields.io/badge/LEVEL_01-ROT__13-00B4D8?style=for-the-badge" /><br/>
+      <code>[ LOCKED ]</code><br/>
+      🚩
+    </td>
+    <td align="center" width="200">
+      <img src="https://img.shields.io/badge/LEVEL_02-BINARY-00B4D8?style=for-the-badge" /><br/>
+      <code>[ LOCKED ]</code><br/>
+      🚩
+    </td>
+    <td align="center" width="200">
+      <img src="https://img.shields.io/badge/LEVEL_03-GIT__HISTORY-00B4D8?style=for-the-badge" /><br/>
+      <code>[ LOCKED ]</code><br/>
+      🚩
+    </td>
+  </tr>
+</table>
+
+</details>
+
+<a href="https://vector3451.github.io/Vector3451/flag_tracker.html"><img src="https://img.shields.io/badge/⚑_LAUNCH_TRACKER-INTERACT_IN_BROWSER-00B4D8?style=for-the-badge&logo=hackaday&logoColor=white" alt="Flag Tracker"/></a>
+&nbsp;
 <a href="https://github.com/Vector3451"><img src="https://img.shields.io/badge/ACCESS_GRANTED-SYSTEM_MASTER-00B4D8?style=for-the-badge&logo=hackthebox&logoColor=white" alt="Access Granted Reward"/></a>
 </details>
 
@@ -89,7 +119,7 @@ REWARD: "Click the badge below to claim your master access token."
 ```yaml
 LEVEL_1:
   tool: "rot13.com"
-  input: "synt{1_cbeg_fpna_pbzcyrgr}"
+  input: "synt{1_cbeg_fpna_pbzcyrgrq}"
   action: "Paste the string, copy the output"
 
 LEVEL_2:
@@ -115,13 +145,30 @@ LEVEL_3:
 >_ MUSIC SEQUENCER TERMINAL  ···  vector3451.wav
 ```
 
-<a href="https://vector3451.github.io/Vector3451/sequencer.html">
-  <img src="https://readme-typing-svg.demolab.com?font=Share+Tech+Mono&size=20&duration=3000&pause=500&color=00B4D8&center=true&vCenter=true&width=480&lines=%5B+LAUNCH+AUDIO+SEQUENCER+%5D;%E2%96%B6+PLAY+BEAT;%E2%96%A0+STOP" alt="Launch Sequencer"/>
-</a>
-
 *Access the interactive 16-step 8-track Web Audio API synthesizer directly in your browser. Compose loop architectures, trigger drum synthesis, and manipulate frequency data.*
 
-**(Note: You must enable GitHub Pages on this repository to let the sequencer run!)**
+</div>
+
+<!-- Inline sequencer embed via GitHub Pages -->
+<div align="center">
+
+<details open>
+<summary><code>🎵 [remote@Vector3451] ~$ ./launch_sequencer.sh</code></summary>
+
+<br/>
+
+[![Sequencer Preview](https://readme-typing-svg.demolab.com?font=Share+Tech+Mono&size=14&duration=4000&pause=500&color=00ffea&center=true&vCenter=true&width=700&lines=TRACK_01+|+██++░░++░░++░░++██++░░++░░++░░++██++░░++░░++░░++██++░░++░░++░░;TRACK_02+|+░░++░░++░░++░░++██++░░++░░++░░++░░++░░++░░++░░++██++░░++░░++░░;TRACK_03+|+░░++░░++██++░░++░░++░░++██++░░++░░++░░++██++░░++░░++░░++██++░░;TRACK_04+|+░░++░░++░░++░░++░░++░░++░░++░░++░░++░░++░░++░░++░░++░░++░░++██;TRACK_05+|+░░++██++░░++░░++░░++██++░░++░░++░░++██++░░++░░++░░++██++░░++░░;TRACK_06+|+░░++░░++░░++██++░░++░░++░░++██++░░++░░++░░++██++░░++░░++░░++██;TRACK_07+|+░░++░░++░░++░░++░░++░░++██++░░++░░++░░++░░++░░++░░++░░++██++░░;TRACK_08+|+░░++░░++░░++░░++░░++░░++░░++░░++██++░░++░░++░░++░░++░░++░░++░░)](https://vector3451.github.io/Vector3451/sequencer.html)
+
+<br/>
+
+<a href="https://vector3451.github.io/Vector3451/sequencer.html">
+  <img src="https://img.shields.io/badge/▶_LAUNCH_SEQUENCER-OPEN_IN_BROWSER-00B4D8?style=for-the-badge&logo=musicbrainz&logoColor=white" alt="Launch Sequencer"/>
+</a>
+
+> **🎹 Embedded Controls** — The sequencer interface runs entirely in your browser via GitHub Pages.  
+> *8 tracks (Kick, Snare, Hihat, Clap, Bass, Lead, Pad, FX) spanning 16 synthesis steps.*
+
+</details>
 
 </div>
 

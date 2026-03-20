@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>CTF Flag Tracker · Vector3451</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{
+    background:#0d1117;
+    color:#c9d1d9;
+    font-family:'Share Tech Mono',monospace;
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    padding:20px;
+    overflow-x:hidden;
+  }
+
+  /* Animated scan line */
+  body::before{
+    content:'';
+    position:fixed;
+    top:0;left:0;right:0;
+    height:3px;
+    background:linear-gradient(90deg,transparent,#00B4D8,transparent);
+    animation:scanH 4s linear infinite;
+    z-index:0;
+    pointer-events:none;
+  }
+  @keyframes scanH{0%{top:-10px}100%{top:100vh}}
+
+  /* Grid BG */
+  body::after{
+    content:'';
+    position:fixed;
+    inset:0;
+    background-image:
+      linear-gradient(rgba(0,180,216,0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0,180,216,0.04) 1px, transparent 1px);
+    background-size:40px 40px;
+    pointer-events:none;
+    z-index:0;
+  }
+
+  .container{
+    position:relative;
+    z-index:1;
+    width:100%;
+    max-width:640px;
+  }
+
+  .terminal-header{
+    border:1px solid #00B4D8;
+    border-bottom:none;
+    padding:8px 16px;
+    display:flex;
+    align-items:center;
+    gap:10px;
+    background:#0d1117;
+  }
+  .dot{width:10px;height:10px;border-radius:50%;}
+  .dot.r{background:#ff5f56;}
+  .dot.y{background:#ffbd2e;}
+  .dot.g{background:#27c93f;}
+  .terminal-title{color:#00B4D8;font-size:13px;margin-left:auto;margin-right:auto;}
+
+  .terminal-body{
+    border:1px solid #00B4D8;
+    padding:24px;
+    background:rgba(13,17,23,0.95);
+  }
+
+  h1{
+    text-align:center;
+    color:#00B4D8;
+    font-size:1.1rem;
+    margin-bottom:4px;
+    letter-spacing:2px;
+  }
+  .subtitle{
+    text-align:center;
+    color:#58a6ff;
+    font-size:0.75rem;
+    margin-bottom:24px;
+    opacity:0.7;
+  }
+
+  /* Progress bar */
+  .progress-wrap{
+    margin-bottom:24px;
+  }
+  .progress-label{
+    display:flex;
+    justify-content:space-between;
+    font-size:0.75rem;
+    color:#8b949e;
+    margin-bottom:6px;
+  }
+  .progress-bar-bg{
+    height:6px;
+    background:#161b22;
+    border-radius:3px;
+    overflow:hidden;
+    border:1px solid #30363d;
+  }
+  .progress-bar-fill{
+    height:100%;
+    background:linear-gradient(90deg,#00B4D8,#0077ff);
+    border-radius:3px;
+    transition:width 0.6s cubic-bezier(.4,2,.6,1);
+    box-shadow:0 0 8px #00B4D8;
+    width:0%;
+  }
+
+  /* Flag cards */
+  .flags-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:12px;
+    margin-bottom:24px;
+  }
+  .flag-card{
+    border:1px solid #30363d;
+    padding:16px 10px;
+    text-align:center;
+    cursor:pointer;
+    transition:all 0.3s ease;
+    background:#0d1117;
+    user-select:none;
+    position:relative;
+    overflow:hidden;
+  }
+  .flag-card::before{
+    content:'';
+    position:absolute;
+    inset:0;
+    background:linear-gradient(135deg,#00B4D8,#0077ff);
+    opacity:0;
+    transition:opacity 0.3s ease;
+  }
+  .flag-card:hover{
+    border-color:#00B4D8;
+    transform:translateY(-2px);
+    box-shadow:0 4px 20px rgba(0,180,216,0.2);
+  }
+  .flag-card.found{
+    border-color:#00B4D8;
+    background:#0d1117;
+    animation:foundPulse 0.5s ease;
+  }
+  .flag-card.found::before{opacity:0.08;}
+  @keyframes foundPulse{
+    0%{transform:scale(1)}
+    50%{transform:scale(1.05);box-shadow:0 0 30px rgba(0,180,216,0.5);}
+    100%{transform:scale(1)}
+  }
+
+  .flag-icon{
+    font-size:2rem;
+    display:block;
+    margin-bottom:8px;
+    position:relative;
+    z-index:1;
+    transition:transform 0.3s ease;
+    filter:grayscale(1) opacity(0.4);
+  }
+  .flag-card.found .flag-icon{
+    filter:none;
+    transform:scale(1.1);
+  }
+  .flag-level{
+    font-size:0.7rem;
+    color:#8b949e;
+    position:relative;
+    z-index:1;
+    letter-spacing:1px;
+  }
+  .flag-card.found .flag-level{color:#00B4D8;}
+  .flag-name{
+    font-size:0.8rem;
+    color:#58a6ff;
+    margin-top:4px;
+    position:relative;
+    z-index:1;
+  }
+  .flag-card.found .flag-name{color:#fff;}
+
+  .flag-status{
+    font-size:0.65rem;
+    margin-top:6px;
+    position:relative;
+    z-index:1;
+    color:#30363d;
+    letter-spacing:1px;
+  }
+  .flag-card.found .flag-status{color:#00B4D8;}
+
+  /* Status log */
+  .log{
+    background:#010409;
+    border:1px solid #21262d;
+    padding:12px 16px;
+    font-size:0.75rem;
+    min-height:60px;
+    max-height:100px;
+    overflow-y:auto;
+    margin-bottom:20px;
+  }
+  .log-line{margin-bottom:4px;animation:fadeIn 0.3s ease;}
+  .log-line.sys{color:#00B4D8;}
+  .log-line.warn{color:#ff7b72;}
+  .log-line.ok{color:#3fb950;}
+  @keyframes fadeIn{from{opacity:0;transform:translateX(-8px)}to{opacity:1;transform:none}}
+
+  /* Reward */
+  .reward{
+    display:none;
+    text-align:center;
+    border:1px solid #3fb950;
+    padding:20px;
+    animation:rewardAppear 0.6s ease;
+    background:rgba(63,185,80,0.05);
+  }
+  .reward.show{display:block;}
+  @keyframes rewardAppear{
+    from{opacity:0;transform:scale(0.95)}
+    to{opacity:1;transform:scale(1)}
+  }
+  .reward-title{color:#3fb950;font-size:1rem;margin-bottom:8px;letter-spacing:2px;}
+  .reward-token{
+    background:#010409;
+    border:1px solid #3fb950;
+    padding:10px 16px;
+    color:#3fb950;
+    font-size:0.85rem;
+    display:inline-block;
+    margin:10px 0;
+    letter-spacing:2px;
+    word-break:break-all;
+  }
+  .reward-sub{color:#8b949e;font-size:0.7rem;margin-top:8px;}
+
+  .reset-btn{
+    background:none;
+    border:1px solid #30363d;
+    color:#8b949e;
+    font-family:inherit;
+    font-size:0.7rem;
+    padding:6px 14px;
+    cursor:pointer;
+    float:right;
+    transition:all 0.2s;
+    letter-spacing:1px;
+  }
+  .reset-btn:hover{border-color:#ff7b72;color:#ff7b72;}
+
+  /* Counter */
+  .counter{
+    text-align:center;
+    font-size:2rem;
+    color:#00B4D8;
+    margin-bottom:4px;
+    text-shadow:0 0 20px #00B4D8;
+    transition:all 0.3s ease;
+  }
+  .counter sup{font-size:1rem;color:#8b949e;}
+  .counter-label{text-align:center;font-size:0.7rem;color:#8b949e;margin-bottom:16px;letter-spacing:2px;}
+
+  a.back{
+    display:inline-block;
+    margin-top:20px;
+    color:#00B4D8;
+    text-decoration:none;
+    font-size:0.75rem;
+    opacity:0.7;
+    transition:opacity 0.2s;
+  }
+  a.back:hover{opacity:1;}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="terminal-header">
+    <div class="dot r"></div>
+    <div class="dot y"></div>
+    <div class="dot g"></div>
+    <span class="terminal-title">&gt;_ FLAG_TRACKER · CTF_ENGINE · breach.log</span>
+  </div>
+  <div class="terminal-body">
+    <h1>⚑ ACTIVE FLAG TRACKER</h1>
+    <p class="subtitle">*Locate all 3 hidden flags embedded in the system.*</p>
+
+    <div class="counter" id="counter">0<sup>/3</sup></div>
+    <div class="counter-label">FLAGS CAPTURED</div>
+
+    <div class="progress-wrap">
+      <div class="progress-label">
+        <span>BREACH PROGRESS</span>
+        <span id="pct">0%</span>
+      </div>
+      <div class="progress-bar-bg">
+        <div class="progress-bar-fill" id="pbar"></div>
+      </div>
+    </div>
+
+    <div class="flags-grid">
+      <div class="flag-card" id="flag1" onclick="captureFlag(1)">
+        <span class="flag-icon">🚩</span>
+        <div class="flag-level">LEVEL 01</div>
+        <div class="flag-name">ROT-13</div>
+        <div class="flag-status" id="status1">[ LOCKED ]</div>
+      </div>
+      <div class="flag-card" id="flag2" onclick="captureFlag(2)">
+        <span class="flag-icon">🚩</span>
+        <div class="flag-level">LEVEL 02</div>
+        <div class="flag-name">BINARY</div>
+        <div class="flag-status" id="status2">[ LOCKED ]</div>
+      </div>
+      <div class="flag-card" id="flag3" onclick="captureFlag(3)">
+        <span class="flag-icon">🚩</span>
+        <div class="flag-level">LEVEL 03</div>
+        <div class="flag-name">GIT HISTORY</div>
+        <div class="flag-status" id="status3">[ LOCKED ]</div>
+      </div>
+    </div>
+
+    <div class="log" id="log">
+      <div class="log-line sys">[SYS] CTF_ENGINE initialized. SECURE_SHELL_OPEN.</div>
+      <div class="log-line sys">[SYS] Awaiting flag captures... Click a flag card when found.</div>
+    </div>
+
+    <div class="reward" id="reward">
+      <div class="reward-title">✓ ACCESS GRANTED · SYSTEM_MASTER</div>
+      <div class="reward-token">FLAG{V3CT0R_M4ST3R_4CC3SS_GRANT3D}</div>
+      <div class="reward-sub">All 3 flags captured. You have proven your rank. Welcome, operator.</div>
+    </div>
+
+    <button class="reset-btn" onclick="resetAll()">⟳ RESET</button>
+    <a class="back" href="https://github.com/Vector3451">← return to github.com/Vector3451</a>
+  </div>
+</div>
+
+<script>
+  const STATE_KEY = 'ctf_flags_v3451';
+  let found = JSON.parse(localStorage.getItem(STATE_KEY) || '[]');
+
+  const logs = [
+    null,
+    '[OK] FLAG_01 CAPTURED :: ROT-13 cipher decoded. Port intercept confirmed.',
+    '[OK] FLAG_02 CAPTURED :: Binary fragments decoded. ASCII payload extracted.',
+    '[OK] FLAG_03 CAPTURED :: Commit history traversed. Final flag recovered.',
+  ];
+
+  function init() {
+    found.forEach(n => applyFound(n, false));
+    updateUI();
+  }
+
+  function captureFlag(n) {
+    if (found.includes(n)) {
+      appendLog(`[WARN] FLAG_0${n} already captured.`, 'warn');
+      return;
+    }
+    found.push(n);
+    localStorage.setItem(STATE_KEY, JSON.stringify(found));
+    applyFound(n, true);
+    appendLog(logs[n], 'ok');
+    updateUI();
+  }
+
+  function applyFound(n, animate) {
+    const card = document.getElementById('flag' + n);
+    const status = document.getElementById('status' + n);
+    card.classList.add('found');
+    status.textContent = '[ CAPTURED ]';
+    if (animate) card.style.animation = 'none';
+  }
+
+  function updateUI() {
+    const count = found.length;
+    const pct = Math.round((count / 3) * 100);
+    document.getElementById('counter').innerHTML = `${count}<sup>/3</sup>`;
+    document.getElementById('pbar').style.width = pct + '%';
+    document.getElementById('pct').textContent = pct + '%';
+    if (count === 3) {
+      setTimeout(() => {
+        document.getElementById('reward').classList.add('show');
+        appendLog('[SYS] *** ALL FLAGS CAPTURED. ACCESS GRANTED. SYSTEM_MASTER rank achieved. ***', 'ok');
+      }, 500);
+    }
+  }
+
+  function appendLog(msg, cls = 'sys') {
+    const log = document.getElementById('log');
+    const div = document.createElement('div');
+    div.className = `log-line ${cls}`;
+    div.textContent = msg;
+    log.appendChild(div);
+    log.scrollTop = log.scrollHeight;
+  }
+
+  function resetAll() {
+    found = [];
+    localStorage.removeItem(STATE_KEY);
+    location.reload();
+  }
+
+  init();
+</script>
+</body>
+</html>
