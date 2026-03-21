@@ -139,10 +139,8 @@ LEVEL_3:
 <div align="center">
 
 ```
->_ MUSIC SEQUENCER TERMINAL  ···  vector3451.wav
+>_ CONTRIBUTION TRACKER ··· 
 ```
-
-*Access the interactive 16-step 8-track Web Audio API synthesizer directly in your browser. Compose loop architectures, trigger drum synthesis, and manipulate frequency data.*
 
 </div>
 
@@ -157,14 +155,9 @@ LEVEL_3:
 [![Sequencer Preview](https://readme-typing-svg.demolab.com?font=Share+Tech+Mono&size=14&duration=4000&pause=500&color=00ffea&center=true&vCenter=true&width=700&lines=TRACK_01+|+██++░░++░░++░░++██++░░++░░++░░++██++░░++░░++░░++██++░░++░░++░░;TRACK_02+|+░░++░░++░░++░░++██++░░++░░++░░++░░++░░++░░++░░++██++░░++░░++░░;TRACK_03+|+░░++░░++██++░░++░░++░░++██++░░++░░++░░++██++░░++░░++░░++██++░░;TRACK_04+|+░░++░░++░░++░░++░░++░░++░░++░░++░░++░░++░░++░░++░░++░░++░░++██;TRACK_05+|+░░++██++░░++░░++░░++██++░░++░░++░░++██++░░++░░++░░++██++░░++░░;TRACK_06+|+░░++░░++░░++██++░░++░░++░░++██++░░++░░++░░++██++░░++░░++░░++██;TRACK_07+|+░░++░░++░░++░░++░░++░░++██++░░++░░++░░++░░++░░++░░++░░++██++░░;TRACK_08+|+░░++░░++░░++░░++░░++░░++░░++░░++██++░░++░░++░░++░░++░░++░░++░░)](https://vector3451.github.io/Vector3451/sequencer.html)
 
 <br/>
-
 <a href="https://vector3451.github.io/Vector3451/sequencer.html">
   <img src="https://img.shields.io/badge/▶_LAUNCH_SEQUENCER-OPEN_IN_BROWSER-00B4D8?style=for-the-badge&logo=musicbrainz&logoColor=white" alt="Launch Sequencer"/>
 </a>
-
-> **🎹 Embedded Controls** — The sequencer interface runs entirely in your browser via GitHub Pages.  
-> *8 tracks (Kick, Snare, Hihat, Clap, Bass, Lead, Pad, FX) spanning 16 synthesis steps.*
-
 </details>
 
 </div>
