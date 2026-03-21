@@ -16,7 +16,7 @@
 <div align="center">
 
 ```
->_ CTF_ENGINE  ···  breach.log
+>_ CTF_ENGINE _<
 ```
 
 *Infiltrate the system. Find the 3 hidden flags to prove your rank.*<br/>
@@ -139,7 +139,7 @@ LEVEL_3:
 <div align="center">
 
 ```
->_ CONTRIBUTION TRACKER ··· 
+>_ CONTRIBUTION TRACKER _<
 ```
 
 </div>
@@ -168,7 +168,7 @@ LEVEL_3:
 <div align="center">
 
 ```
->_ DIAGNOSTIC REPORT  ···  github.com/Vector3451
+>_ DIAGNOSTIC REPORT _<
 ```
 
 <img src="https://github-readme-stats.vercel.app/api?username=Vector3451&show_icons=true&theme=github_dark&hide_border=true&bg_color=0D1117&title_color=00B4D8&icon_color=00B4D8&text_color=C9D1D9&border_radius=4" height="160"/>
@@ -185,7 +185,7 @@ LEVEL_3:
 <div align="center">
 
 ```
->_ LEETCODE TERMINAL  ···  Vinay_Vijay_2.bin
+>_ LEETCODE TERMINAL _<
 ```
 
 <img src="https://leetcard.jacoblin.cool/Vinay_Vijay_2?theme=dark&font=Fira%20Code&ext=heatmap&border=0&radius=4&width=500&colors=0d1117,161b22,00B4D8,00B4D8,c9d1d9,00B4D8,ff7b72,ffa657,00B4D8" alt="LeetCode Stats"/>
