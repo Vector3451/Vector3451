@@ -19,7 +19,7 @@
 >_ CTF_ENGINE _<
 ```
 
-*Infiltrate the system. Find the 3 hidden flags to prove your rank.*<br/>
+*Infiltrate the system. Find the 3 hidden flags if you can!*<br/>
 
 </div>
 
