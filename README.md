@@ -27,7 +27,7 @@
 
 <div align="left">
 
-<details open>
+<details>
 <summary><code>🖤️ [remote@Vector3451] ~$ ./initialize_breach.sh</code></summary>
 
 ```yaml
