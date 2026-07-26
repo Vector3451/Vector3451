@@ -108,7 +108,6 @@ MISSION: "If you found all 3 flags, congratulations. You are in."
 </table>
 
 </details>
-</details>
 
 <details>
 <summary><code>📡 [remote@Vector3451] ~$ decode_hints --all</code></summary>
@@ -129,6 +128,7 @@ LEVEL_3:
   url: "github.com/Vector3451/Vector3451/commits/main"
   action: "Find the commit with a hex title. The flag is in its body."
 ```
+</details>
 </details>
 
 </div>
