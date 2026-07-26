@@ -147,7 +147,6 @@ LEVEL_3:
 <!-- Inline sequencer embed via GitHub Pages -->
 <div align="center">
 
-<details open>
 <summary><code>🎵 [remote@Vector3451] ~$ ./launch_sequencer.sh</code></summary>
 
 <br/>
